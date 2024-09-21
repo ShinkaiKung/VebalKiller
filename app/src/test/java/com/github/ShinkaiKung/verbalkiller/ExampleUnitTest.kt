@@ -29,6 +29,15 @@ class CheckAnswerTest {
         "C0" to Group(2, mutableSetOf("C0", "C1", "C2")),
         "D0" to Group(3, mutableSetOf("D0", "D1", "D2")),
     )
+    private val wordsGroupsB: List<Pair<String, Group>> = listOf(
+        "A0" to Group(0, mutableSetOf("A0", "A1", "A2")),
+        "C0" to Group(2, mutableSetOf("C0", "C1", "C2")),
+        "B0" to Group(1, mutableSetOf("B0", "B1", "B2")),
+        "D0" to Group(3, mutableSetOf("D0", "D1", "D2")),
+        "A1" to Group(0, mutableSetOf("A0", "A1", "A2")),
+        "B1" to Group(1, mutableSetOf("B0", "B1", "B2")),
+    )
+
 
     @Test
     fun checkAnswer1() {
@@ -95,6 +104,19 @@ class CheckAnswerTest {
         val buttonColors: List<Int> = listOf(1, 2, 1, 2, 0, 0)
         assertEquals(listOf(3, 3, 4, 4, 0, 0), checkAnswer(buttonColors, wordsGroupsA))
     }
+
+    @Test
+    fun checkAnswer12() {
+        val buttonColors: List<Int> = listOf(1, 0, 2, 0, 1, 2)
+        assertEquals(listOf(1, 0, 2, 0, 1, 2), checkAnswer(buttonColors, wordsGroupsB))
+    }
+
+    @Test
+    fun checkAnswer13() {
+        val buttonColors: List<Int> = listOf(2, 0, 1, 0, 2, 1)
+        assertEquals(listOf(2, 0, 1, 0, 2, 1), checkAnswer(buttonColors, wordsGroupsB))
+    }
+
 
 
 }

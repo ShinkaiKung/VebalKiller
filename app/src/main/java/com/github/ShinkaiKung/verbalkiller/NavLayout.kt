@@ -205,15 +205,16 @@ fun DropdownMenuLayout(isOpen: MutableState<Boolean>) {
         onDismissRequest = { isOpen.value = !isOpen.value },
         modifier = Modifier.background(MaterialTheme.colorScheme.onPrimary)
     ) {
-        for (i in globalGroups.indices step 100) {
+        val stepLength = 200
+        for (i in globalGroups.indices step stepLength) {
             DropdownMenuItem(text = {
                 Row(horizontalArrangement = Arrangement.SpaceBetween) {
                     Text(
-                        text = "${i + 1}-${i + 100}", modifier = Modifier.padding(horizontal = 4.dp)
+                        text = "${i + 1}-${i + stepLength}", modifier = Modifier.padding(horizontal = 4.dp)
                     )
                 }
             }, onClick = {
-                getSubGroupsWithIndex(i, i + 100)
+                getSubGroupsWithIndex(i, i + stepLength)
             })
         }
         DropdownMenuItem(text = {

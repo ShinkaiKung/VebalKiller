@@ -1,843 +1,905 @@
-﻿1,mitigate,abate; curtail; temper; ameliorate,缓和,,,
-2,anomaly,aberration,异常,,,
-3,quiescent,abeyant; calm,不活跃的，静止的,,,
-4,unprecedented,abnormal,前所未有的,,,
-5,proliferate,abound,激增,,,
-6,synoptic,abridged,概要的,,,
-7,exonerate,absolve,免罪,,,
-8,general,abstract,笼统的,,,
-9,regular,abundant,常出现的,,,
-10,misuse,abuse,误用,,,
-11,acquiescence,accession,默许,,,
-12,hail,acclaim,称赞,,,
-13,consensus,accord,一致意见,,,
-14,caustic,acerbic,尖刻的,,,
-15,mordant,acerbic,尖刻的,,,
-16,vitriolic,acerbic; opprobrium,尖酸刻薄的,,,
-17,realize,achieve,实现,,,
-18,concede,acknowledge,承认,,,
-19,accession,acquiescence,遵守,,,
-20,flexibility,adaptability; suppleness; malleability,灵活性，适应性,,,
-21,proficient,adept,精通的,,,
-22,disciple,adherent,信徒,,,
-23,nimble,adroit;dexterous; skillful,敏捷的,,,
-24,approbation,adulation; commendation,赞同,,,
-25,antagonistic,adversarial; inimical,敌对的,,,
-26,easygoing,affable,悠闲的,,,
-27,kindred,affiliated,同类的，相似的,,,
-28,opulent,affluent,富裕的,,,
-29,exacerbate,aggravate,使恶化,,,
-30,unsettle,alarm; disconcert,使不安,,,
-31,beneficence,altruism,慈善的,,,
-32,benevolent,altruistic; magnanimous,仁慈的,,,
-33,wondrous,amazing,奇妙的,,,
-34,equivocal,ambiguous,模棱两可的,,,
-35,comparable,analogous,相似的,,,
-36,galvanize,animate; rouse,激励,,,
-37,aberration,anomaly,异常,,,
-38,irregularity,anomaly,异常,,,
-39,obscure,anonymous; opaque; obfuscate,1.不出名的 2.费解的 3. 使费解,,,
-40,adversarial,antagonistic,对立的,,,
-41,inimical,antagonistic; deleterious,1.有害的 2.不友好的,,,
-42,predate,antedate; precede,早于,,,
-43,archaic,antediluvian; outdated,古老的,,,
-44,foresee,anticipate,预见,,,
-45,prefigure,anticipate,预示,,,
-46,indifferent,apathy,冷漠,,,
-47,palatable,appetizing,好吃的,,,
-48,extol,applaud,赞扬,,,
-49,fitting,apposite,适合的,,,
-50,commendation,approbation,称赞,,,
-51,adulation,approbation; sycophant,谄媚,,,
-52,pilfer,appropriate,偷窃,,,
-53,antediluvian,archaic,过时的,,,
-54,laborious,arduous,勤劳的,,,
-55,taxing,arduous,费劲的,,,
-56,hubris,arrogance,傲慢自大的,,,
-57,specious,artificial; forged; fabricated; spurious,虚假的,,,
-58,spurious,artificial; implausible,虚假的,,,
-59,simplicity,artlessness,简单，简朴,,,
-60,slur,aspersion,贬低,,,
-61,maintain,assert,断言,,,
-62,expansion,augmentation; burgeoning,扩张，增长,,,
-63,favorable,auspicious,有利的,,,
-64,propitious,auspicious,吉利的,,,
-65,spartan,austere,朴素的,,,
-66,abstemious,austere; moderate,有节制的,,,
-67,rapacious,avaricious,贪婪的,,,
-68,ungainly,awkward,笨拙的，不优雅的,,,
-69,stale,banal,陈旧的，厌倦的,,,
-70,raillery,banter,开玩笑的,,,
-71,untenable,baseless,站不住脚的,,,
-72,indebted,beholden,感激的,,,
-73,mask,belie,掩饰,,,
-74,boon,benefit,好处，恩惠,,,
-75,altruistic,benevolent,无私的,,,
-76,signify,betoken,表明,,,
-77,orientation,bias,目标，态度,,,
-78,unimpeachable,blameless,毋庸置疑的,,,
-79,insipid,bland,枯燥乏味的,,,
-80,brandish,boast,炫耀,,,
-81,buttress,bolster,支持,,,
-82,appropriate,borrow,挪用,,,
-83,boast,brandish,吹嘘，自夸,,,
-84,economy,brevity,节约,,,
-85,tolerate,brook,华丽，显赫,,,
-86,pastoral,bucolic,乡村的,,,
-87,nascent,budding; unformed,刚出现的,,,
-88,onerous,burdensome,繁重的,,,
-89,no-nonsense,businesslike,严肃的，高效干练的,,,
-90,bolster,buttress; prop up,支持,,,
-91,circumvent,bypass; sidestep; skirt,避开,,,
-92,deliberate,calculated,故意的,,,
-93,heartless,callous,残酷的,,,
-94,solidarity,camaraderie,团结,,,
-95,mimic,camouflage; replicate,1.模仿 2.和...相似,,,
-96,formulaic,canned,老套的，公式化的,,,
-97,deft,canny,灵巧的,,,
-98,shrewd,canny; artful,精明的,,,
-99,arbitrary,capricious,随意的，武断的,,,
-100,whimsical,capricious,难以预测的,,,
-101,impulsive,capricious; hasty,冲动的,,,
-102,secure,capture; earn,获得,,,
-103,vigilant,careful,警惕的,,,
-104,chastise,castigate,严厉批评,,,
-105,shriek,caterwaul,尖叫,,,
-106,relinquish,cede,放弃,,,
-107,dispatch,celerity,迅速,,,
-108,defend,champion,为…做辩护,,,
-109,espouse,champion; advocate; defend,拥护,,,
-110,allure,charm,引诱,,,
-111,castigate,chastise,严厉批评,,,
-112,stem,check,阻止,,,
-113,prudent,circumspect; provident,审慎的,,,
-114,contingent,circumstantial,取决于,,,
-115,sidestep,circumvent,回避,,,
-116,bypass,circumvent; skirt,避开,,,
-117,comity,civility,友谊,,,
-118,covert,clandestine,秘密的,,,
-119,archetypical,classic,典型的,,,
-120,orderly,coherent,有秩序的,,,
-121,immense,colossal,巨大的,,,
-122,meld,combine,混合,,,
-123,civility,comity,礼貌,,,
-124,equivalent,commensurate,相同的，等价的,,,
-125,unremarkable,commonplace,普通的,,,
-126,analogous,comparable,类似的,,,
-127,offset,compensate,补偿，抵消,,,
-128,placidity,complacency,满足，平和,,,
-129,tractable,compliant,驯服的，温顺的,,,
-130,knotty,complicated,复杂的，棘手的,,,
-131,acknowledge,concede,承认,,,
-132,plausible,conceivable,1.真实的 2.看似真实的,,,
-133,decry,condemn,公开谴责,,,
-134,meet,condign,合适的,,,
-135,circumscribe,confine; limit,限制,,,
-136,hew to,conform to,遵守,,,
-137,square with,conform to,与…一致,,,
-138,flummox,confound,使困惑,,,
-139,perplex,confound; baffle,迷惑,,,
-140,muddle,confuse,使混乱,,,
-141,speculation,conjecture,推测,,,
-142,obtrusive,conspicuous,惹眼的,,,
-143,prominent,conspicuous; salient,显著的,,,
-144,deter,constrain,阻止,,,
-145,ponder,contemplate,深思熟虑,,,
-146,competing,contending,竞争的,,,
-147,discordance,contention,不一致,,,
-148,controversial,contentious,有争议的,,,
-149,circumstantial,contingent,依情况而定的,,,
-150,dwindle,contract,逐渐减小，逐渐变小,,,
-151,dichotomous,contradictory,矛盾的,,,
-152,violate,contravene,违反,,,
-153,contentious,controversial,有争议的,,,
-154,riddle,conundrum; enigma; puzzle,迷,,,
-155,intricate,convoluted,错综复杂的,,,
-156,tortuous,convoluted,冗长复杂的,,,
-157,upheaval,convulsion,剧变,,,
-158,deleterious,counterproductive; detrimental; devastating; pernicious,有害的，有毒的,,,
-159,clandestine,covert; surreptitious,秘密的,,,
-160,enviable,coveted,令人羡慕的,,,
-161,cunning,crafty,狡猾的,,,
-162,beget,create,产生,,,
-163,disgruntle,crestfallen,使不高兴,,,
-164,disintegrate,crumble,瓦解,,,
-165,unwieldy,cumbersome,笨重的，难操作的,,,
-166,perfunctory,cursory; casual,敷衍的,,,
-167,palliate,damp,减轻,,,
-168,perilous,dangerous; precarious,危险的,,,
-169,dim,darken,使变暗,,,
-170,formidable,daunting,可怕的,,,
-171,modicum,dearth,少量的,,,
-172,paucity,dearth,不足,,,
-173,deterioration,decay; decline,恶化,,,
-174,prophylactic,inhibitory,预防的,,,
-175,overwhelming,irresistible,压倒性的，难抵抗的,,,
-176,interested in,drawn to,对···有兴趣,,,
-177,unmistakable,decisive,毋庸置疑的，明显的,,,
-178,senescence,decrepitude,衰老，老朽,,,
-179,condemn,decry,谴责,,,
-180,calumny,defamation,诽谤,,,
-181,blemish,defect,1.玷污 2.缺点，污点,,,
-182,champion,defend; espouse; support,支持,,,
-183,proponent,defender; champion,支持者,,,
-184,scarce,deficient,缺乏的,,,
-185,authoritative,definitive; cogent,权威的,,,
-186,soothe,deflate,使减少,,,
-187,disregard,defy; contempt,贬低,,,
-188,counterproductive,deleterious,事与愿违的,,,
-189,detrimental,deleterious,有害的,,,
-190,relish,delight in,享受,,,
-191,lambaste,denounce,严厉批评,,,
-192,witless,dense,愚蠢的,,,
-193,reprehensible,deplorable,应受谴责的,,,
-194,detract,deprecate,贬低,,,  
-195,mockery,derision,嘲笑,,,
-196,ridicule,derision,嘲弄,,,
-197,abandon,desert; relinquish,放弃,,,
-198,annihilate,destroy,消灭，毁灭,,,
-199,discern,detect; discover,觉察，分辨,,,
-200,constrain,deter,限制,,,
-201,decay,deterioration,腐朽,,,
-202,govern,determine,决定,,,
-203,deprecatory,detracting,反对的,,,
-204,guile,deviousness,奸诈,,,
-205,identify,diagnose,确定,,,
-206,rant,diatribe,严厉批评,,,
-207,contradictory,dichotomous,矛盾的,,,
-208,timid,diffident,胆怯的，羞怯的,,,
-209,remiss,dilatory,懈怠的,,,
-210,sluggish,dilatory; listless,缓慢的,,,
-211,industrious,diligent,勤奋的,,,
-212,darken,dim,使变暗，使忧郁,,,
-213,minuscule,diminutive,极小的,,,
-214,calamity,disaster,灾难,,,
-215,detect,discern,发现,,,
-216,perceptible,discernible,可见的，可察觉的,,,
-217,perspicacious,discernible,有洞察力的,,,
-218,inconspicuous,discreet,低调的，不显眼的,,,
-219,incongruity,discrepancy,矛盾的,,,
-220,opprobrium,disdain; vitriol,谴责，耻辱,,,
-221,contemptuous,disdainful,轻蔑的,,,
-222,dump,disgorge,排出,,,
-223,crestfallen,disgruntled,不高兴的,,,
-224,crumble,disintegrate,崩溃，破碎,,,
-225,slight,disparage; discount,贬低,,,
-226,heterogeneous,disparate; dissimilar,各种各样的,,,
-227,analytical,dispassionate,善于分析的，冷静客观的,,,
-228,temperate,dispassionate,温和的，适度的,,,
-229,celerity,dispatch,速度，迅速,,,
-230,defy,disregard; flout,蔑视,,,
-231,duplicity,dissemblance,欺骗,,,
-232,attenuate,dissipate; mute,减弱，变稀,,,
-233,untether,divorce,脱离,,,
-234,dogmatic,doctrinaire; rigid,武断的，教条主义的,,,
-235,doctrinaire,dogmatic,教条主义的,,,
-236,skepticism,doubt,怀疑,,,
-237,extinguish,douse,熄灭，毁灭,,,
-238,pacific,dovish,和平主义的,,,
-239,spectacular,dramatic,壮观的,,,
-240,elicit,draw out,引出,,,
-241,tedious,dreary; boring,单调乏味的,,,
-242,humdrum,dull,单调的，乏味的,,,
-243,disgorge,dump,排出,,,
-244,dissemble,duplicity,伪装,,,
-245,contract,dwindle,逐渐减少，逐渐变小,,,
-246,keen,eager,渴望的,,,
-247,affable,easygoing; cordial; genteel,和蔼可亲的,,,
-248,wane,ebb; decline,衰落，减少，衰落期,,,
-249,outdo,eclipse,超过,,,
-250,pecuniary,economic,,,,
-251,euphoria,ecstasy,,,,
-252,flagrant,egregious,,,,
-253,chic,elegant,,,,
-254,plaintive,elegiac,,,,
-255,draw,elicit,,,,
-256,extirpate,eliminate,,,,
-257,put to rest,eliminated,,,,
-258,slippery,elusive,,,,
-259,cryptic,elusive,,,,
-260,evasive,elusive; equivocal,,,,
-261,totemic,emblematic,,,,
-262,revision,emendation,,,,
-263,effusive,emotional,,,,
-264,imitate,emulate,,,,
-265,captivate,enamor,,,,
-266,tribute,encomium,,,,
-267,polymath,encyclopedic,,,,
-268,exhaustive,encyclopedic; comprehensive,,,,
-269,sanction,endorse,,,,
-270,induce,engender,,,,
-271,hone,enhance,,,,
-272,inferable from,entailed by,,,,
-273,diverting,entertaining,,,,
-274,supplicate,entreat; solicit,,,,
-275,covet,envy,,,,
-276,short-lived,ephemeral,,,,
-277,transitory,ephemeral; evanescent,,,,
-278,parity,equality,,,,
-279,wayward,errant; unpredictable,,,,
-280,onetime,erstwhile,,,,
-281,shun,eschew,,,,
-282,recondite,esoteric; arcane; abstruse,,,,
-283,abstruse,esoteric; arcane; recondite,,,,
-284,arcane,esoteric; recondite; abstruse,,,,
-285,requisite,essential,,,,
-286,indispensable,essential; crucial,,,,
-287,lionize,eulogize,,,,
-288,ecstasy,euphoria,,,,
-289,momentary,evanescent,,,,
-290,impartial,evenhanded; disinterested; fair; detachment,,,,
-291,aggravate,exacerbate,,,,
-292,demanding,exacting,,,,
-293,prescriptive,exacting,,,,
-294,hyperbole,exaggeration,,,,
-295,valorize,exalt,,,,
-296,irascible,exasperation,,,,
-297,preternatural,exceptional,,,,
-298,crab,excoriate,,,,
-299,indict,excoriate,,,,
-300,wield,exert,,,,
-301,encyclopedic,exhaustive; polymathic,,,,
-302,comprehensive,exhaustive; sweeping; generic; inclusive,,,,
-303,pressing,exigent; critical,,,,
-304,tenuous,exiguous,,,,
-305,absolve,exonerate,,,,
-306,burgeon,expand; flourish,,,,
-307,oust,expel; banish,,,,
-308,banish,expel; oust,,,,
-309,innovative,experimental,,,,
-310,augment,extend; expand; enhance,,,,
-311,douse,extinguish,,,,
-312,eliminate,extirpate; put to rest,,,,
-313,profligate,extravagant; prodigal,,,,
-314,zealot,extremist; ideologue,,,,
-315,forge,fabricate,,,,
-316,schism,factiousness,,,,
-317,objective,fair,,,,
-318,disinterested,fair; impartial,,,,
-319,eminent,famous,,,,
-320,shortcoming,fault,,,,
-321,enamor,favor; captivate; hooked on,,,,
-322,auspicious,favorable,,,,
-323,debacle,fiasco,,,,
-324,volatile,fickle; versatile; flighty; erratic; capricious,,,,
-325,erratic,fickle; versatile; volatile; flighty; capricious,,,,
-326,impassioned,fiery,,,,
-327,apposite,fitting; germane,,,,
-328,obsessed,fixated,,,,
-329,egregious,flagrant,,,,
-330,wanting,flawed,,,,
-331,supple,flexible,,,,
-332,spurn,flout,,,,
-333,precursor,forerunner,,,,
-334,avert,forestall,,,,
-335,stave off,forestall,,,,
-336,daunting,formidable; sensational; forbidding,,,,
-337,canned,formulaic,,,,
-338,adopt,foster,,,,
-339,spur,foster,,,,
-340,bedrock,foundation,,,,
-341,inception,foundation,,,,
-342,restive,fractious,,,,
-343,malfeasance,fraudulence,,,,
-344,genial,friendly,,,,
-345,utilitarian,functional,,,,
-346,interchangeable,fungible,,,,
-347,facilitate,further,,,,
-348,synthesis,fusion,,,,
-349,pointless,futile,,,,
-350,animate,galvanize; rouse; inspire,,,,
-351,loquacious,garrulous,,,,
-352,reckon,gauge,,,,
-353,abstract,general,,,,
-354,inclusive,generic; all-encompassing,,,,
-355,obtain,glean,,,,
-356,cheerless,gloomy,,,,
-357,lugubrious,gloomy,,,,
-358,abundance,glut,,,,
-359,surfeit,glut; plethora,,,,
-360,imperceptible,gradual,,,,
-361,sociable,gregarious,,,,
-362,unwarranted,groundless,,,,
-363,devious,guile; indirect,,,,
-364,acclaim,hail,,,,
-365,impede,hamper,,,,
-366,impair,hamstring; undermine; vitiate; compromise; undercut,,,,
-367,helter-skelter,haphazard,,,,
-368,innocuous,harmless; benign; inoffensive,,,,
-369,callous,heartless,,,,
-370,buoy,help,,,,
-371,diversity,heterogeneity,,,,
-372,dissimilar,heterogeneous,,,,
-373,disparate,heterogeneous; diverse; dissimilar; variant,,,,
-374,stratified,hierarchical,,,,
-375,stymie,hinder,,,,
-376,inhibit,hinder; bridle; suppress,,,,
-377,snag,hitch,,,,
-378,patchwork,hodgepodge,,,,
-379,welter,hodgepodge,,,,
-380,resemblance,homogeneity,,,,
-381,enhance,hone,,,,
-382,venerate,honor; respect,,,,
-383,arrogant,hubristic,,,,
-384,exaggerate,hyperbole; overrate,,,,
-385,mendacity,hypocrisy,,,,
-386,heterodox,iconoclastic,,,,
-387,quixotic,idealistic,,,,
-388,chimera,illusion,,,,
-389,quaff,imbibe,,,,
-390,emulate,imitate,,,,
-391,colossal,immense,,,,
-392,unbounded,immoderate; expansive,,,,
-393,hamstring,impair,,,,
-394,vitiate,impair,,,,
-395,compromise,impair; concession,,,,
-396,undermine,impair; subvert; undercut,,,,
-397,evenhanded,impartial,,,,
-398,neutrality,impartiality,,,,
-399,fiery,impassioned,,,,
-400,zealous,impassioned; fervent; fiery; passionate,,,,
-401,indigent,impecunious,,,,
-402,hamper,impede,,,,
-403,indiscernible,imperceptible,,,,
-404,unyielding,implacable,,,,
-405,hasty,impulsive; rapid,,,,
-406,erroneous,inaccurate,,,,
-407,ominous,inauspicious,,,,
-408,innate,inborn,,,,
-409,foundation,inception; bedrock,,,,
-410,acute,incisive; severe,,,,
-411,all-encompassing,inclusive,,,,
-412,generic,inclusive,,,,
-413,inexplicable,incomprehensible,,,,
-414,discrepancy,incongruity,,,,
-415,immaterial,inconsequential,,,,
-416,trivial,inconsequential; immaterial,,,,
-417,mixed,inconsistent,,,,
-418,indubitable,incontrovertible,,,,
-419,beholden,indebted,,,,
-420,unseemly,indecorous,,,,
-421,excoriate,indict; crab,,,,
-422,impecunious,indigent,,,,
-423,circuitous,indirect,,,,
-424,essential,indispensable,,,,
-425,diligent,industrious,,,,
-426,incomprehensible,inexplicable,,,,
-427,surmise,infer,,,,
-428,entailed by,inferable from,,,,
-429,provocative,inflammatory,,,,
-430,intrinsic,inherent,,,,
-431,benign,innocuous; anodyne,,,,
-432,experimental,innovative,,,,
-433,uninformative,inscrutable,,,,
-434,negligible,insignificant; inconsequential; trifling,,,,
-435,bland,insipid,,,,
-436,nonchalant,insouciant,,,,
-437,abet,instigate,,,,
-438,meager,insufficient; paltry,,,,
-439,provincial,insular,,,,
-440,readable,intelligible,,,,
-441,fungible,interchangeable,,,,
-442,interrelated,interdependent,,,,
-443,compelling,interesting,,,,
-444,construe,interpret,,,,
-445,interdependent,interrelated,,,,
-446,stubborn,intractable,,,,
-447,obdurate,intransigent; fortitude,,,,
-448,convoluted,intricate; tortuous,,,,
-449,spontaneous,intuitive,,,,
-450,exasperation,irascibility,,,,
-451,paradoxical,ironic,,,,
-452,extraneous,irrelevant,,,,
-453,vacillation,irresolution,,,,
-454,peripatetic,itinerant,,,,
-455,complicated,knotty,,,,
-456,terse,laconic; curt; taciturn; succinct,,,,
-457,taciturn,laconic; terse; curt,,,,
-458,curt,laconic; terse; taciturn,,,,
-459,denounce,lambast,,,,
-460,nonspecialist,layperson,,,,
-461,erudite,learned,,,,
-462,cede to,left to,,,,
-463,somnolent,lethargic,,,,
-464,slumberous,lethargic,,,,
-465,rejection,liberation from,,,,
-466,confine,limit; circumscribe,,,,
-467,scant,limited,,,,
-468,pellucid,limpid,,,,
-469,eulogize,lionize,,,,
-470,mutable,liquid,,,,
-471,tilt,list,,,,
-472,perennial,long-standing,,,,
-473,garrulous,loquacious,,,,
-474,risible,ludicrous,,,,
-475,gloomy,lugubrious; cheerless,,,,
-476,respite,lull; relief; break,,,,
-477,rampant,luxuriant,,,,
-478,fraudulent,malfeasant,,,,
-479,plastic,malleable,,,,
-480,noisome,malodorous,,,,
-481,self-evident,manifest,,,,
-482,peripheral,marginal,,,,
-483,fringe,marginal; peripheral,,,,
-484,belie,mask,,,,
-485,precocious,mature,,,,
-486,nonconformist,maverick,,,,
-487,insufficient,meager,,,,
-488,paltry,meager; insufficient,,,,
-489,condign,meet,,,,
-490,hypocrisy,mendacity; insincerity,,,,
-491,painstaking,meticulous,,,,
-492,thorough,meticulous,,,,
-493,exactitude,meticulousness,,,,
-494,trifling,minimal,,,,
-495,diminutive,minuscule,,,,
-496,trepidation,misgiving; apprehension,,,,
-497,abuse,misuse,,,,
-498,abate,mitigate,,,,
-499,alleviate,mitigate,,,,
-500,curtail,mitigate,,,,
-501,inconsistent,mixed,,,,
-502,derision,mockery,,,,
-503,exemplary,model,,,,
-504,paradigm,model,,,,
-505,unostentatious,modest,,,,
-506,unassuming,modest; humble,,,,
-507,humility,modesty,,,,
-508,temper,modulate; mitigate; neutralize,,,,
-509,evanescent,momentary,,,,
-510,fleeting,momentary,,,,
-511,acerbic,mordant; vitriolic; caustic; cutting; scathing,,,,
-512,confused,muddled,,,,
-513,budding,nascent,,,,
-514,endemic,native; domestic; indigenous,,,,
-515,vague,nebulous,,,,
-516,forsake,neglect,,,,
-517,dexterous,nimble,,,,
-518,adroit,nimble; dexterous; deft; acumen,,,,
-519,businesslike,no-nonsense,,,,
-520,malodorous,noisome,,,,
-521,maverick,nonconformist,,,,
-522,unexceptional,nondescript,,,,
-523,layperson,nonspecialist,,,,
-524,original,novel,,,,
-525,unexampled,novel,,,,
-526,tyro,novice; neophyte,,,,
-527,occult,numinous,,,,
-528,intransigent,obdurate; resolute,,,,
-529,fairness,objectivity,,,,
-530,anonymous,obscure,,,,
-531,opaque,obscure; inaccessible,,,,
-532,obfuscate,obscure; mystify,,,,
-533,sycophantic,obsequious; adulating,,,,
-534,fixated,obsessed,,,,
-535,fusty,obsolete; outmoded,,,,
-536,glean,obtain,,,,
-537,conspicuous,obtrusive; prominent; salient; remarkable,,,,
-538,displace,obviate,,,,
-539,sporadic,occasional; fitful,,,,
-540,numinous,occult,,,,
-541,universal,omnipresent; ubiquitous,,,,
-542,ubiquitous,omnipresent; universal,,,,
-543,burdensome,onerous,,,,
-544,erstwhile,onetime,,,,
-545,inaccessible,opaque,,,,
-546,timely,opportune,,,,
-547,disdain,opprobrium; contempt,,,,
-548,sanguine,optimistic,,,,
-549,stability,order,,,,
-550,coherent,orderly,,,,
-551,provenance,origin,,,,
-552,novel,original; unexampled; unprecedented,,,,
-553,generate,originate,,,,
-554,expel,oust,,,,
-555,eclipse,outdo,,,,
-556,overshadow,outlast; obscure,,,,
-557,obsolete,outmoded; fusty,,,,
-558,belabor,overemphasize,,,,
-559,dovish,pacific,,,,
-560,damp,palliate,,,,
-561,cure-all,panacea,,,,
-562,remedy,panacea,,,,
-563,ironic,paradoxical,,,,
-564,counterpart,parallel,,,,
-565,stingy,parsimonious,,,,
-566,apathy,passivity,,,,
-567,bucolic,pastoral,,,,
-568,hodgepodge,patchwork; welter; pastiche,,,,
-569,vacuous,paucity,,,,
-570,dearth,paucity; modicum,,,,
-571,economic,pecuniary,,,,
-572,limpid,pellucid,,,,
-573,faultless,perfect,,,,
-574,cursory,perfunctory; casual,,,,
-575,precarious,perilous,,,,
-576,itinerant,peripatetic,,,,
-577,marginal,peripheral,,,,
-578,porous,permeable,,,,
-579,confound,perplex; flummox,,,,
-580,enigmatic,perplexing,,,,
-581,commonplace,pervasive,,,,
-582,conciliatory,placatory,,,,
-583,elegiac,plaintive,,,,
-584,malleable,plastic,,,,
-585,conceivable,plausible,,,,
-586,gratify,please,,,,
-587,futile,pointless,,,,
-588,contemplate,ponder,,,,
-589,permeable,porous,,,,
-590,presage,portend,,,,
-591,didactic,preachy,,,,
-592,sanctimonious,preachy; didactic,,,,
-593,impetuous,precipitate,,,,
-594,rule out,preclude,,,,
-595,prejudice,preconception,,,,
-596,forerunner,precursor,,,,
-597,precede,predate; antedate,,,,
-598,portend,predict; presage,,,,
-599,proclivity,predilection,,,,
-600,anticipate,prefigure; foresee,,,,
-601,preconception,prejudice,,,,
-602,prophetic,prescient,,,,
-603,exacting,prescriptive; rigorous; demanding,,,,
-604,safeguard,preserve,,,,
-605,exigent,pressing,,,,
-606,exceptional,preternatural,,,,
-607,preclude,prevent; rule out,,,,
-608,rudimentary,primitive; sketchy; embryonic; sketchy; elemental,,,,
-609,unblemished,pristine,,,,
-610,profess,proclaim,,,,
-611,predilection,proclivity; preference,,,,
-612,voracious,prodigious; insatiable,,,,
-613,proclaim,profess,,,,
-614,trenchant,profound; incisive,,,,
-615,wealth,profusion,,,,
-616,abound,proliferate,,,,
-617,verbose,prolix; long-winded,,,,
-618,prescient,prophetic,,,,
-619,commensurate,proportionate,,,,
-620,versatile,protean; fickle; volatile; flighty; erratic; capricious,,,,
-621,parochial,provincial,,,,
-622,insular,provincial; private,,,,
-623,inflammatory,provocative,,,,
-624,circumspect,prudent; chary; cautious,,,,
-625,belligerent,pugnacious,,,,
-626,truculent,pugnacious; bellicose; combative; aggressive,,,,
-627,design,purposefulness,,,,
-628,elude,puzzle,,,,
-629,imbibe,quaff,,,,
-630,abeyance,quiescence,,,,
-631,idealistic,quixotic,,,,
-632,banter,raillery,,,,
-633,luxuriant,rampant,,,,
-634,haphazard,random; helter-skelter,,,,
-635,diatribe,rant,,,,
-636,avaricious,rapacious,,,,
-637,reconciliation,rapprochement,,,,
-638,intelligible,readable,,,,
-639,verisimilitude,realism,,,,
-640,pragmatic,realistic,,,,
-641,repudiate,recant,,,,
-642,gauge,reckon,,,,
-643,shrink,recoil,,,,
-644,rapprochement,reconciliation,,,,
-645,esoteric,recondite; arcane; abstruse,,,,
-646,rehash,recycle,,,,
-647,liberation,rejection,,,,
-648,kinfolk,relative,,,,
-649,germane,relevant; apposite,,,,
-650,vestige,relic,,,,
-651,delight,relish,,,,
-652,loath,reluctant; unwilling; disinclined,,,,
-653,panacea,remedy; cure-all,,,,
-654,strip away,remove,,,,
-655,censure,reprehend,,,,
-656,deplorable,reprehensible,,,,
-657,recant,repudiate,,,,
-658,homogeneity,resemblance; uniform,,,,
-659,tenacity,resolve; endurance,,,,
-660,ring true,resonate,,,,
-661,hallow,respect,,,,
-662,deferential,respectful,,,,
-663,lull,respite,,,,
-664,relief,respite,,,,
-665,skittish,restive; fractious,,,,
-666,fractious,restive; skittish,,,,
-667,tonic,restorative,,,,
-668,rehabilitate,restore,,,,
-669,recrudescent,resurgent,,,,
-670,manifest,reveal; self-evident; obvious,,,,
-671,emendation,revision,,,,
-672,renaissance,revival,,,,
-673,eloquent,rhetoric,,,,
-674,conundrum,riddle; puzzle; enigma,,,,
-675,pervasive,rife,,,,
-676,resonate,ring true,,,,
-677,ludicrous,risible,,,,
-678,elemental,rudimentary,,,,
-679,embryonic,rudimentary,,,,
-680,primitive,rudimentary; ancient,,,,
-681,sketchy,rudimentary; superficial; undeveloped,,,,
-682,visible,salient,,,,
-683,preachy,sanctimonious; didactic,,,,
-684,endorse,sanction; commend; support; authorize,,,,
-685,factious,schism,,,,
-686,admonish,scold,,,,
-687,capture,secure,,,,
-688,narcissism,self-flattery,,,,
-689,decrepitude,senescence,,,,
-690,successive,sequential,,,,
-691,unerring,settled,,,,
-692,stifle,shackle,,,,
-693,superficial,shallow,,,,
-694,truncate,shorten; foreshorten,,,,
-695,artful,shrewd,,,,
-696,canny,shrewd; deft,,,,
-697,acumen,shrewdness,,,,
-698,caterwaul,shriek,,,,
-699,recoil,shrink,,,,
-700,deflect,shrug off,,,,
-701,betoken,signify,,,,
-702,artless,simplistic,,,,
-703,disparage,slight,,,,
-704,snub,slight,,,,
-705,elusive,slippery; evasive; cryptic,,,,
-706,dilatory,sluggish; remiss; laggard,,,,
-707,aspersion,slur,,,,
-708,hitch,snag,,,,
-709,staid,sober,,,,
-710,gregarious,sociable,,,,
-711,somber,solemn,,,,
-712,camaraderie,solidarity,,,,
-713,solemn,somber,,,,
-714,lethargic,somnolent; slumberous,,,,
-715,deflate,soothe,,,,
-716,sleazy,sordid,,,,
-717,unassailable,sound,,,,
-718,dramatic,spectacular,,,,
-719,conjecture,speculation,,,,
-720,vigorous,spirited,,,,
-721,intuitive,spontaneous,,,,
-722,diffuse,spread; disperse; wordy,,,,
-723,foster,spur; adopt,,,,
-724,artificial,spurious,,,,
-725,flout,spurn; defy; disregard,,,,
-726,conform to,square with,,,,
-727,sobering,staid,,,,
-728,banal,stale,,,,
-729,forestall,stave off; avert; prevent,,,,
-730,check,stem,,,,
-731,shackle,stifle,,,,
-732,parsimonious,stingy; illiberal,,,,
-733,hierarchical,stratified,,,,
-734,audacious,striking,,,,
-735,robust,strong,,,,
-736,hinder,stymie; inhibit; block,,,,
-737,obedience,submission,,,,
-738,nuance,subtlety,,,,
-739,undercut,subvert; impair; undermine,,,,
-740,triumph,success,,,,
-741,sequential,successive,,,,
-742,yield,succumb; engender; output,,,,
-743,surly,sullen,,,,
-744,plethora,surfeit; glut,,,,
-745,glut,surfeit; plethora,,,,
-746,sullen,surly; grumpy,,,,
-747,dubious,suspect,,,,
-748,obsequious,sycophantic,,,,
-749,figurative,symbolic,,,,
-750,tantamount,synonymous,,,,
-751,fusion,synthesis,,,,
-752,laconic,taciturn; terse; curt,,,,
-753,impolitic,tactless,,,,
-754,synonymous,tantamount,,,,
-755,dreary,tedious,,,,
-756,modulate,temper,,,,
-757,dispassionate,temperate; analytical,,,,
-758,resolve,tenacity,,,,
-759,exiguous,tenuous,,,,
-760,halfhearted,tepid; lukewarm,,,,
-761,meticulous,thorough; exact; painstaking,,,,
-762,frugal,thrifty,,,,
-763,list,tilt,,,,
-764,opportune,timely,,,,
-765,brook,tolerate,,,,
-766,restorative,tonic,,,,
-767,emblematic,totemic,,,,
-768,ephemeral,transitory; short-lived,,,,
-769,profound,trenchant,,,,
-770,misgiving,trepidation; qualm,,,,
-771,encomium,tribute,,,,
-772,inconsequential,trivial; immaterial,,,,
-773,pugnacious,truculent; belligerent,,,,
-774,credulous,trusting,,,,
-775,novice,tyro,,,,
-776,omnipresent,ubiquitous; universal,,,,
-777,unqualified,unalloyed,,,,
-778,sound,unassailable; valid,,,,
-779,modest,unassuming; unostentatious,,,,
-780,inevitable,unavoidable; preordained; ineluctable,,,,
-781,pristine,unblemished,,,,
-782,unremitting,unceasing,,,,
-783,quirky,unconventional,,,,
-784,unorthodox,unconventional,,,,
-785,irrefutable,undeniable,,,,
-786,nondescript,unexceptional,,,,
-787,counterintuitive,unexpected,,,,
-788,ignorance,unfamiliarity,,,,
-789,outmoded,unfashionable; obsolete; fusty,,,,
-790,unflagging,unfatigued,,,,
-791,adverse,unfavorable,,,,
-792,baseless,unfounded; untenable,,,,
-793,awkward,ungainly,,,,
-794,blameless,unimpeachable,,,,
-795,skeptical,unimpressed,,,,
-796,inscrutable,uninformative; impenetrable; abstruse,,,,
-797,singular,unique,,,,
-798,unfounded,unjustified; baseless; groundless; unwarranted,,,,
-799,estrange,unlinked; disaffect,,,,
-800,decisive,unmistakable,,,,
-801,composed,unperturbed; collected; coolheaded,,,,
-802,capricious,unpredictable; impulsive; cavalier; versatile,,,,
-803,unalloyed,unqualified,,,,
-804,undeniable,unquestionable; irrefutable,,,,
-805,unprepossessing,unremarkable,,,,
-806,unceasing,unremitting,,,,
-807,untrammeled,unrestrained,,,,
-808,divorced,untethered; abstracted,,,,
-809,groundless,unwarranted,,,,
-810,cumbersome,unwieldy,,,,
-811,reluctant,unwilling; loath,,,,
-812,implacable,unyielding; inexorable,,,,
-813,convulsion,upheaval,,,,
-814,irresolution,vacillation,,,,
-815,nebulous,vague,,,,
-816,exalt,valorize,,,,
-817,jejune,vapid,,,,
-818,fluctuate,vary; vacillate,,,,
-819,honor,venerate,,,,
-820,reverence,veneration,,,,
-821,prolix,verbose; long-winded,,,,
-822,long-winded,verbose; prolix,,,,
-823,protean,versatile,,,,
-824,fickle,versatile; volatile; flighty; erratic; capricious,,,,
-825,relic,vestige,,,,
-826,chagrin,vexation,,,,
-827,exculpate,vindicate,,,,
-828,contravene,violate,,,,
-829,salient,visible; prominent; obtrusive; conspicuous,,,,
-830,mercurial,volatile; inconstant,,,,
-831,prodigious,voracious,,,,
-832,insatiable,voracious; quenchless,,,,
-833,decline,wane,,,,
-834,ebb,wane; decline,,,,
-835,errant,wayward,,,,
-836,profusion,wealth,,,,
-837,prevalent,widespread; extensive,,,,
-838,engaging,winning,,,,
-839,quotidian,workday,,,,
-840,succumb,yield,,,,
-841,engender,yield; induce,,,,
-842,extremist,zealot,,,,
-843,ideologue,zealot,,,,
+﻿1,mitigate,abate; curtail; temper; ameliorate,缓和
+2,anomaly,aberration,异常
+3,quiescent,abeyant; calm,不活跃的，静止的
+4,unprecedented,abnormal,前所未有的
+5,proliferate,abound,激增
+6,synoptic,abridged,概要的
+7,exonerate,absolve,免罪
+8,general,abstract,笼统的
+9,regular,abundant,常出现的
+10,misuse,abuse,误用
+11,acquiescence,accession,默许
+12,hail,acclaim,称赞
+13,consensus,accord,一致意见
+14,caustic,acerbic,尖刻的
+15,mordant,acerbic,尖刻的
+16,vitriolic,acerbic;opprobrium,尖酸刻薄的
+17,realize,achieve,实现
+18,concede,acknowledge,承认
+19,accession,acquiescence,遵守
+20,flexibility,adaptability; suppleness; malleability,灵活性，适应性
+21,proficient,adept,精通的
+22,disciple,adherent,信徒
+23,nimble,adroit; dexterous; skillful,敏捷的
+24,approbation,adulation; commendation,赞同
+25,antagonistic,adversarial; inimical,敌对的
+26,easygoing,affable,悠闲的
+27,kindred,affiliated,同类的，相似的
+28,opulent,affluent,富裕的
+29,exacerbate,aggravate,使恶化
+30,unsettle,alarm; disconcert,使不安
+31,beneficence,altruism,慈善，善行
+32,benevolent,altruistic; magnanimous,仁慈的
+33,wondrous,amazing,奇妙的
+34,equivocal,ambiguous,模棱两可的
+35,comparable,analogous,相似的
+36,galvanize,animate; rouse,激励
+37,aberration,anomaly,异常
+38,irregularity,anomaly,异常
+39,obscure,anonymous; opaque; obfuscate,1.不出名的 2.费解的3.使费解
+40,adversarial,antagonistic,对立的
+41,inimical,antagonistic; deleterious,1.有害的 2.不友好的
+42,predate,antedate; precede,早于
+43,archaic,antediluvian; outdated,古老的
+44,foresee,anticipate,预见
+45,prefigure,anticipate,预示
+46,indifferent,apathy,冷漠
+47,palatable,appetizing,好吃的
+48,extol,applaud,赞扬
+49,fitting,apposite,适合的
+50,commendation,approbation,称赞
+51,adulation,approbation; sycophant,谄媚
+52,pilfer,appropriate,偷窃
+53,antediluvian,archaic,过时的
+54,laborious,arduous,勤劳的
+55,taxing,arduous,费劲的
+56,hubris,arrogance,傲慢自大的
+57,specious,artificial; forged; fabricated; spurious,虚假的
+58,spurious,artificial; implausible,虚假的
+59,simplicity,artlessness,简单，简朴
+60,slur,aspersion,贬低
+61,maintain,assert,断言
+62,expansion,augmentation; burgeoning,扩张，增长
+63,favorable,auspicious,有利的
+64,propitious,auspicious,吉利的
+65,spartan,austere,朴素的
+66,abstemious,austere; moderate,有节制的
+67,reflexive,automatic,本能的，无意识的
+68,rapacious,avaricious,贪婪的
+69,ungainly,awkward,笨拙的，不优雅的
+70,stale,banal,陈旧的，厌倦的
+71,raillery,banter,开玩笑
+72,untenable,baseless,站不住脚的
+73,indebted,beholden,感激的
+74,mask,belie,掩饰
+75,boon,benefit; windfall,好处，恩惠
+76,altruistic,benevolent,无私的
+77,signify,betoken,表明
+78,orientation,bias,目标，态度
+79,unimpeachable,blameless,毋庸置疑的
+80,insipid,bland,枯燥乏味的
+81,brandish,boast,炫耀
+82,buttress,bolster,支持
+83,appropriate,borrow,挪用
+84,boast,brandish,吹嘘，自夸
+85,economy,brevity,节约
+86,splendor,brilliance,华丽，显赫
+87,tolerate,brook,容许
+88,pastoral,bucolic,乡村的
+89,nascent,budding; unformed,刚出现的
+90,insulated from,buffered against,与隔绝
+91,onerous,burdensome,繁重的
+92,no-nonsense,businesslike,严肃的，高效干练的
+93,bolster,buttress; prop up,支持
+94,circumvent,bypass; sidestep; skirt,避开
+95,deliberate,calculated,故意的
+96,heartless,callous,残酷的
+97,solidarity,camaraderie,团结
+98,mimic,camouflage; replicate,1.模仿 2.和.相似
+99,formulaic,canned,老套的，公式化的
+100,deft,canny,灵巧的
+101,shrewd,canny; artful,精明的
+102,arbitrary,capricious,随意的，武断的
+103,whimsical,capricious,难以预测的
+104,impulsive,capricious; hasty,冲动的
+105,secure,capture; earn,获得
+106,vigilant,careful,警惕的
+107,chastise,castigate,严厉批评
+108,shriek,caterwaul,尖叫
+109,relinquish,cede,放弃
+110,dispatch,celerity,迅速
+111,disapprobation,censure,谴责
+112,defend,champion,为做辩护
+113,espouse,champion ;advocate ;defend,拥护
+114,allure,charm,引诱
+115,castigate,chastise,严厉批评
+116,stem,check,阻止
+117,prudent,circumspect; provident,审慎的
+118,contingent,circumstantial,取决于
+119,sidestep,circumvent,回避
+120,bypass,circumvent; skirt,避开
+121,comity,civility,友谊
+122,covert,clandestine,秘密的
+123,archetypical,classic,典型的
+124,orderly,coherent,有秩序的
+125,immense,colossal,巨大的
+126,meld,combine,混合
+127,civility,comity,礼貌
+128,equivalent,commensurate,相同的，等价的
+129,unremarkable,commonplace,普通的
+130,analogous,comparable,类似的
+131,offset,compensate,补偿，抵消
+132,placidity,complacency,满足，平和
+133,tractable,compliant,驯服的，温顺的
+134,knotty,complicated,复杂的，棘手的
+135,acknowledge,concede,承认
+136,plausible,conceivable,1.真实的 2.看似真实(但实际虚假)
+137,decry,condemn,公开谴责
+138,meet,condign,合适的
+139,circumscribe,confine; limit,限制
+140,hew to,conform to,遵守
+141,square with,conform to,与一致
+142,flummox,confound,使困惑
+143,perplex,confound; baffle,迷惑
+144,muddle,confuse,使混乱
+145,speculation,conjecture,推测
+146,obtrusive,conspicuous,惹眼的
+147,prominent,conspicuous; salient,显著的
+148,deter,constrain,阻止
+149,ponder,contemplate,深思熟虑
+150,competing,contending,竞争的
+151,discordance,contention,不一致
+152,controversial,contentious,有争议的
+153,circumstantial,contingent,依情况而定的
+154,dwindle,contract,逐渐减小，逐渐变小
+155,dichotomous,contradictory,矛盾的
+156,violate,contravene,违反
+157,contentious,controversial,好争议的
+158,riddle,conundrum; enigma; puzzle,谜
+159,intricate,convoluted,错综复杂的
+160,tortuous,convoluted,冗长复杂的
+161,upheaval,convulsion,剧变
+162,deleterious,counterproductive; detrimental;devastating; pernicious,有害的，有毒的
+163,clandestine,covert; surreptitious,秘密的
+164,enviable,coveted,令人羡慕的
+165,cunning,crafty,狡猾的
+166,beget,create,产生
+167,disgruntle,crestfallen,使不高兴
+168,disintegrate,crumble,瓦解
+169,unwieldy,cumbersome,笨重的，难操作的
+170,perfunctory,cursory;casual,敷衍的
+171,palliate,damp,减轻
+172,perilous,dangerous; precarious,危险的
+173,dim,darken,使变暗
+174,formidable,daunting,可怕的
+175,modicum,dearth,少量
+176,paucity,dearth,不足
+177,deterioration,decay; decline,恶化
+178,prophylactic,inhibitory,预防的
+179,overwhelming,irresistible,压倒性的，难抵抗的
+180,interested in,drawn to,对有兴趣
+181,unmistakable,decisive,毋庸置疑的，明显的
+182,senescence,decrepitude,衰老，老朽
+183,condemn,decry,谴责
+184,calumny,defamation,诽谤
+185,blemish,defect,1.玷污 2.缺点，污点
+186,champion,defend; espouse;support,支持
+187,proponent,defender; champion,支持者
+188,scarce,deficient,缺乏的
+189,authoritative,definitive; cogent,权威的
+190,soothe,deflate,使减少
+191,disregard,defy; contempt,贬低
+192,counterproductive,deleterious,事与愿违的
+193,detrimental,deleterious,有害的
+194,relish,delight in,享受
+195,lambaste,denounce,严厉批评
+196,witless,dense,愚蠢的
+197,reprehensible,deplorable,应受谴责的
+198,detract,deprecate,贬低
+199,mockery,derision,嘲笑
+200,ridicule,derision,嘲弄
+201,abandon,desert; relinquish,放弃
+202,annihilate,destroy,消灭，毁灭
+203,discern,detect; discover,觉察，分辨
+204,constrain,deter,限制
+205,decay,deterioration,腐朽
+206,govern,determine,决定
+207,deprecatory,detracting,反对的
+208,guile,deviousness,奸诈
+209,identify,diagnose,确定
+210,rant,diatribe,严厉批评
+211,contradictory,dichotomous,矛盾的
+212,timid,diffident,胆怯的，羞怯的
+213,remiss,dilatory,懈怠的
+214,sluggish,dilatory; listless,缓慢的
+215,industrious,diligent,勤奋的
+216,darken,dim,使变暗，使忧郁
+217,minuscule,diminutive,极小的
+218,calamity,disaster,灾难
+219,detect,discern,发现
+220,perceptible,discernible,可见的，可察觉的
+221,perspicacious,discernible,有洞察力的
+222,inconspicuous,discreet,低调的，不显眼的
+223,incongruity,discrepancy,矛盾
+224,isolated,discrete,分离的
+225,opprobrium,disdain; vitriol,谴责，耻辱
+226,contemptuous,disdainful,轻蔑的
+227,dump,disgorge,排出
+228,crestfallen,disgruntled,不高兴的
+229,crumble,disintegrate,崩溃，破碎
+230,slight,disparage; discount,贬低
+231,heterogeneous,disparate; dissimilar,各种各样的
+232,analytical,dispassionate,善于分析的，冷静客观的
+233,temperate,dispassionate,温和的，适度的
+234,celerity,dispatch,速度，迅速
+235,defy,disregard; flout,蔑视
+236,duplicity,dissemblance,欺骗
+237,attenuate,dissipate; mute,减弱，变稀
+238,untether,divorce,脱离
+239,dogmatic,doctrinaire; rigid,武断的，教条主义的
+240,doctrinaire,dogmatic,教条主义的
+241,skepticism,doubt,怀疑
+242,extinguish,douse,熄灭，毁灭
+243,pacific,dovish,和平主义的
+244,spectacular,dramatic,壮观的
+245,elicit,draw out,引出
+246,tedious,dreary; boring,单调乏味的
+247,humdrum,dull,单调的，乏味的
+248,disgorge,dump,排出
+249,dissemble,duplicity,伪装
+250,contract,dwindle,逐渐减少，逐渐变小
+251,keen,eager,渴望的
+252,affable,easygoing; cordial; genteel,和蔼可亲的
+253,wane,ebb; decline,衰落，减少，衰落期
+254,outdo,eclipse,超过
+255,pecuniary,economic,金钱的
+256,euphoria,ecstasy,狂喜
+257,democratic,egalitarian,平等主义的
+258,flagrant,egregious,明目张胆的
+259,chic,elegant,时髦的
+260,plaintive,elegiac,悲伤的
+261,draw,elicit,吸引
+262,extirpate,eliminate,根除
+263,put to rest,eliminated,排出
+264,cryptic,elusive,难解的
+265,slippery,elusive,难以抓住的，棘手的
+266,evasive,elusive; equivocal,逃避的，闪烁其词的
+267,totemic,emblematic,象征的
+268,revision,emendation,修订
+269,effusive,emotional,溢于言表的，感情丰富的
+270,imitate,emulate;mimic,模仿
+271,captivate,enamor,迷住
+272,tribute,encomium,称赞，贡品
+273,polymath,encyclopedic,博学者
+274,exhaustive,encyclopedic; comprehensive,全面的
+275,underwrite,endorse,签署
+276,sanction,endorse; countenance,(经济)制裁，批准
+277,induce,engender,引起
+278,hone,enhance,磨砺，提升
+279,inferable from,entailed by,能从推断的
+280,diverting,entertaining,有趣的
+281,supplicate,entreat; solicit,恳求
+282,covet,envy,贪求
+283,short-lived,ephemeral,短暂的
+284,transitory,ephemeral; evanescent,短暂的
+285,parity,equality,平等，相等
+286,wayward,errant;unpredictable,任性的
+287,onetime,erstwhile,过去的
+288,learned,erudite,博学的
+289,shun,eschew,避免
+290,arcane,Esoteric ; recondite ; abstruse,难懂的
+291,recondite,esoteric; arcane; abstruse,晦涩难懂的
+292,abstruse,esoteric; arcane; recondite,难理解的
+293,requisite,essential,必需的
+294,indispensable,essential; crucial,不可或缺的
+295,lionize,eulogize,崇拜，把视为名人
+296,ecstasy,euphoria,狂喜
+297,momentary,evanescent,短暂的
+298,impartial,evenhanded; disinterested; fair;detachment,公正的
+299,patent,evident; manifest,明显的
+300,aggravate,exacerbate,加剧
+301,demanding,exacting,苛求的
+302,prescriptive,exacting,指定的，规定的
+303,overstate,exaggerate,夸大
+304,hyperbole,exaggeration,夸大
+305,valorize,exalt,称赞
+306,irascible,exasperation,易怒的
+307,preternatural,exceptional,异乎寻常的
+308,intemperate,excessive,过度的
+309,sole,exclusive,仅有的
+310,crab,excoriate,抱怨
+311,indict,excoriate,控告
+312,wield,exert,行使，施加
+313,encyclopedic,exhaustive; polymathic,广博的，全面的
+314,comprehensive,exhaustive; sweeping; generic;inclusive,全面的
+315,pressing,exigent; critical,紧迫的，重要的
+316,tenuous,exiguous,纤细的，脆弱的
+317,absolve,exonerate,免罪
+318,burgeon,expand; flourish,迅速生长
+319,oust,expel; banish,罢黜，驱逐，取代
+320,banish,expel; oust,驱逐
+321,innovative,experimental,创新的
+322,attributed to,explained by,归因于
+323,augment,extend; expand; enhance,增加
+324,douse,extinguish,熄灭
+325,eliminate,extirpate; put to rest,消除，淘汰
+326,profligate,extravagant; prodigal,挥霍的
+327,zealot,extremist; ideologue,狂热者
+328,forge,fabricate,锻造，伪造
+329,expedite,facilitate,促使
+330,schism,factiousness,分裂
+331,objective,fair,客观的，公正的
+332,disinterested,fair; impartial,公正的，没有兴趣的
+333,eminent,famous; particular,杰出的，异乎寻常的
+334,shortcoming,fault,缺点
+335,enamor,favor; captivate; hooked on,使迷惑
+336,auspicious,favorable,有望成功的
+337,debacle,fiasco,彻底失败
+338,volatile,fickle; versatile; flighty; erratic;capricious,善变的
+339,erratic,fickle; versatile; volatile; flighty;capricious,难以预测的
+340,impassioned,fiery,热情的
+341,apposite,fitting; germane,合适的
+342,obsessed,fixated,着迷的
+343,egregious,flagrant,臭名昭著的
+344,wanting,flawed,有缺陷的
+345,supple,flexible,能适应的，灵活的，柔韧的
+346,spurn,flout,拒绝
+347,precursor,forerunner,先驱
+348,avert,forestall,转移，防止
+349,stave off,forestall,延缓
+350,daunting,formidable; sensational; forbidding,使人畏惧的
+351,canned,formulaic,无新意的
+352,adopt,foster,收养，采用
+353,spur,foster,激励
+354,bedrock,foundation,基础
+355,inception,foundation,开始
+356,restive,fractious,躁动不安的
+357,malfeasance,fraudulence,渎职
+358,genial,friendly,友善的
+359,utilitarian,functional,实用的
+360,interchangeable,fungible,可交换的
+361,dynamic,mutable,动态的，可变的
+362,levelheaded,sober,头脑冷静的
+363,facilitate,further,促进，加快
+364,synthesis,fusion,合成，综合体
+365,pointless,futile,无意义的
+366,animate,galvanize; rouse; inspire,有生命力的，激励，推动
+367,loquacious,garrulous,健谈的
+368,reckon,gauge,认为，估计
+369,abstract,general,笼统的，抽象的，深奥的，摘要，提取，分散注意力
+370,inclusive,generic;all-encompassing,全包括的，包括首尾两项的
+371,seed,germ,播种，萌芽
+372,obtain,glean,获得
+373,cheerless,gloomy,阴郁的
+374,lugubrious,gloomy,悲伤的
+375,abundance,glut,大量
+376,surfeit,glut; plethora,过量
+377,imperceptible,gradual,难以察觉的
+378,sociable,gregarious,好交际的
+379,unwarranted,groundless,无根据的
+380,devious,guile; indirect,狡诈的，弯曲的
+381,acclaim,hail,称赞
+382,impede,hamper,阻碍
+383,impair,hamstring; undermine; vitiate;compromise; undercut,损害
+384,helter-skelter,haphazard,杂乱的
+385,innocuous,harmless; benign; inoffensive,无害的，无意冒犯的
+386,callous,heartless,冷酷无情的
+387,buoy,help,使振奋
+388,diversity,heterogeneity,多样性，差异化
+389,dissimilar,heterogeneous,不同的
+390,disparate,heterogeneous; diverse; dissimilar;variant,不同的
+391,pedantic,hidebound,迂腐的
+392,stratified,hierarchical,形成阶层的，分层的
+393,stymie,hinder,阻碍
+394,inhibit,hinder; bridle; suppress; constrain,抑制，禁止
+395,snag,hitch,障碍
+396,patchwork,hodgepodge,大杂烩
+397,welter,hodgepodge,混乱无序
+398,resemblance,homogeneity,相似
+399,enhance,hone,提高，改善
+400,venerate,honor; respect,崇敬
+401,arrogant,hubristic,傲慢的
+402,exaggerate,hyperbole; overrate,夸大
+403,mendacity,hypocrisy,不诚实
+404,heterodox,iconoclastic,异端的
+405,revolutionary,iconoclastic,反传统的
+406,quixotic,idealistic,不切实际的
+407,distinct,idiosyncratic,独特的
+408,dismiss,ignore; neglect,忽视
+409,chimera,illusion,幻想
+410,quaff,imbibe,痛饮
+411,emulate,imitate,模仿，努力赶超
+412,colossal,immense,巨大的
+413,unbounded,immoderate; expansive,无限的
+414,hamstring,impair,使无能为力
+415,vitiate,impair,损害
+416,compromise,impair; concession,妥协，危害
+417,undermine,impair; subvert; undercut,暗中破坏
+418,evenhanded,impartial,公平的
+419,neutrality,impartiality,中立
+420,fiery,impassioned,热烈的，暴躁的
+421,zealous,impassioned; fervent; fiery; passionate,热情的，狂热的
+422,indigent,impecunious,贫穷的
+423,hamper,impede,阻碍
+424,indiscernible,imperceptible,难以理解的
+425,unyielding,implacable,不屈的
+426,hasty,impulsive; rapid,匆忙的，草率的
+427,erroneous,inaccurate,错误的
+428,ominous,inauspicious,不祥的
+429,innate,inborn,天生的
+430,foundation,inception; bedrock,创建，基础，根据
+431,acute,incisive; severe,敏锐的，严峻的
+432,all-encompassing,inclusive,包罗万象的
+433,generic,inclusive,通用的
+434,inexplicable,incomprehensible,费解的
+435,discrepancy,incongruity,矛盾
+436,immaterial,inconsequential,不重要的
+437,trivial,inconsequential; immaterial,不重要的
+438,mixed,inconsistent,混合的，矛盾的
+439,indubitable,incontrovertible,不容置疑的
+440,beholden,indebted,欠人情的
+441,unseemly,indecorous,不得体的
+442,excoriate,indict; crab,严厉指责
+443,impecunious,indigent,贫穷的
+444,circuitous,indirect,拐弯抹角的
+445,essential,indispensable; foundational,完全必要的，基本的
+446,diligent,industrious,勤奋的
+447,incomprehensible,inexplicable,费解的
+448,surmise,infer,推测，猜测
+449,entailed by,inferable from,使需要，导致
+450,provocative,inflammatory,引发的，挑衅的
+451,intrinsic,inherent,本质的
+452,benign,innocuous; anodyne,和善的
+453,experimental,innovative,实验的，创新的
+454,unfathomable,inscrutable,不能理解的
+455,uninformative,inscrutable,缺乏信息的
+456,negligible,insignificant; inconsequential; trifling,微不足道的，不重要的
+457,bland,insipid,乏味的，无动于衷的
+458,nonchalant,insouciant,冷漠的
+459,abet,instigate,支持，怂恿
+460,meager,insufficient; paltry,缺乏的，瘦削的
+461,provincial,insular,狭隘的，省的
+462,readable,intelligible,清晰易懂的，可读性强的
+463,fungible,interchangeable,可取代的
+464,interrelated,interdependent,互相联系的
+465,compelling,interesting,激发兴趣的，令人信服的，强大的
+466,construe,interpret,诠释，分析
+467,interdependent,interrelated,互相依赖的
+468,scary,intimidating,令人害怕的
+469,stubborn,intractable,固执的，难除去的
+470,obdurate,intransigent; fortitude,固执的
+471,convoluted,intricate; tortuous,复杂难解的
+472,spontaneous,intuitive,自发的
+473,exasperation,irascibility,恼怒
+474,paradoxical,ironic,矛盾的
+475,extraneous,irrelevant,无关的
+476,vacillation,irresolution,犹豫不决的
+477,peripatetic,itinerant,巡回的
+478,impatient,keen,急切的
+479,complicated,knotty,复杂难懂的
+480,terse,laconic; curt; taciturn; succinct,简短的
+481,taciturn,laconic; terse; curt,沉默寡言的
+482,curt,laconic; terse; taciturn,话少的，唐突无礼的
+483,denounce,lambast,谴责
+484,nonspecialist,layperson,非专业人士
+485,erudite,learned,博学的
+486,cede to,left to,让与
+487,slumberous,lethargic,昏睡的
+488,somnolent,lethargic,昏睡的，催眠的
+489,rejection,liberation from,拒绝，排斥
+490,bound,limit,界限
+491,confine,limit; circumscribe,限制
+492,scant,limited,缺乏的
+493,pellucid,limpid,清晰的
+494,eulogize,lionize,赞美
+495,mutable,liquid,易变的
+496,tilt,list,倾斜，偏见
+497,perennial,long-standing; constant,持久的
+498,garrulous,loquacious,喋喋不休的
+499,remunerative,lucrative,盈利的
+500,risible,ludicrous,可笑的
+501,gloomy,lugubrious; cheerless,忧郁的
+502,respite,lull; relief; break,喘息
+503,rampant,luxuriant,泛滥的，疯长的
+504,fraudulent,malfeasant,欺骗性的
+505,plastic,malleable,可塑的，做作的
+506,noisome,malodorous,令人讨厌的，恶臭的
+507,self-evident,manifest,不证自明的
+508,peripheral,marginal; subsidiary,边缘的，补充的
+509,fringe,marginal; peripheral,边缘
+510,belie,mask; contradict,证明是错误的，掩饰，与…不符
+511,precocious,mature,早熟的
+512,nonconformist,maverick,不守成规者
+513,insufficient,meager,不充足的
+514,paltry,meager; insufficient,很少的，无意义的
+515,condign,meet,适当的
+516,hypocrisy,mendacity; insincerity,伪善
+517,showy,meretricious,虚有其表的，炫耀的
+518,painstaking,meticulous,煞费苦心的
+519,thorough,meticulous,周密的，彻底的
+520,exactitude,meticulousness,精确性
+521,trifling,minimal,微不足道的
+522,diminutive,minuscule,极小的
+523,trepidation,misgiving; apprehension,不安
+524,abuse,misuse,虐待，误用，恶习
+525,abate,mitigate,减弱
+526,alleviate,mitigate,减轻
+527,curtail,mitigate,缩减
+528,inconsistent,mixed; erratic,不一致的，矛盾的
+529,derision,mockery,嘲笑
+530,rebuke,mockery,指责
+531,exemplary,model,楷模的，典型的
+532,paradigm,model,模板，典范
+533,unostentatious,modest,不夸耀的
+534,unassuming,modest; humble,谦逊的
+535,humility,modesty,谦逊
+536,temper,modulate; mitigate; neutralize,缓和
+537,evanescent,momentary,短暂的
+538,fleeting,momentary,短暂的
+539,acerbic,mordant; vitriolic; caustic; cutting;scathing,尖刻的
+540,confused,muddled,迷惑的
+541,ambiguous,mute,模棱两可的
+542,fraud,duplicity,欺诈
+543,hauteur,superciliousness,傲慢
+544,budding,nascent,萌芽期的
+545,endemic,native; domestic; indigenous,地方性的
+546,vague,nebulous,模糊的，不确定的
+547,forsake,neglect,抛弃
+548,dexterous,nimble,机敏的
+549,adroit,nimble; dexterous; deft; acumen,精明的，灵巧的
+550,businesslike,no-nonsense,高效率的
+551,malodorous,noisome,难闻的
+552,maverick,nonconformist,特立独行的人
+553,unexceptional,nondescript,普通的
+554,layperson,nonspecialist,门外汉
+555,original,novel,原创的，新颖的
+556,unexampled,novel,前所未有的
+557,tyro,novice; neophyte,新手
+558,occult,numinous,神秘的
+559,intransigent,obdurate; resolute,不妥协的
+560,fairness,objectivity,公平
+561,anonymous,obscure,无名的，匿名的，无个性的
+562,opaque,obscure; inaccessible,不透明的，难懂的
+563,obfuscate,obscure; mystify,混淆，使迷惑
+564,sycophantic,obsequious; adulating,谄媚的
+565,fixated,obsessed,过分迷恋的
+566,fusty,obsolete; outmoded,霉臭的，守旧的
+567,glean,obtain,搜集，获取
+568,conspicuous,obtrusive; prominent; salient;remarkable,显眼的
+569,displace,obviate,取代，迫使离开
+570,sporadic,occasional; fitful,零星的
+571,numinous,occult,神圣的，超自然的，神秘的
+572,universal,omnipresent; ubiquitous,广泛的，普遍适用的，无处不在的
+573,ubiquitous,omnipresent; universal,无处不在的
+574,burdensome,onerous,繁重的
+575,erstwhile,onetime,过去的
+576,inaccessible,opaque; insurmountable,难以到达的，难以理解的
+577,timely,opportune,适时的
+578,disdain,opprobrium; contempt,鄙视
+579,sanguine,optimistic,乐观的
+580,stability,order,稳定
+581,coherent,orderly,连贯的，条理清楚的
+582,provenance,origin,起源
+583,unconventional,original,非传统的
+584,novel,original; unexampled; unprecedented,新颖的
+585,generate,originate,产生
+586,waver,oscillate,摇摆
+587,expel,oust,开除，驱逐
+588,eclipse,outdo,衰退，使..不重要，胜过
+589,overshadow,outlast; obscure,超越
+590,obsolete,outmoded; fusty,废弃的，老式的
+591,belabor,overemphasize,过分强调，抨击
+592,dovish,pacific,和平主义的
+593,damp,palliate,使减弱
+594,cure-all,panacea,万灵药
+595,remedy,panacea,治疗药物，改进措施，纠正，弥补
+596,ironic,paradoxical,讽刺的
+597,counterpart,parallel; correlative,对应的人或物
+598,stingy,parsimonious,吝啬的，微小的
+599,minutiae,particular,细节
+600,inert,passive; dormant,迟钝的，呆滞的
+601,apathy,passivity,冷漠
+602,bucolic,pastoral,乡村的
+603,hodgepodge,patchwork; welter; pastiche,大杂烩
+604,vacuous,paucity,空洞的
+605,dearth,paucity; modicum,缺乏
+606,economic,pecuniary,有利可图的
+607,limpid,pellucid,清晰的
+608,indigence,penury,贫穷
+609,faultless,perfect,无可挑剔的
+610,cursory,perfunctory; casual; fleeting,草率的
+611,precarious,perilous,危险的，不稳固的
+612,itinerant,peripatetic,流动的，巡回的
+613,marginal,peripheral,不重要的，边缘的
+614,porous,permeable,多孔的，能渗透的
+615,confound,perplex; flummox; resist,1.使迷惑 2.挫败
+616,enigmatic,perplexing,神秘难懂的
+617,durability,persistence,持久
+618,commonplace,pervasive,常见，陈词滥调
+619,conciliatory,placatory,愿意和解的
+620,elegiac,plaintive,哀悼的
+621,malleable,plastic,可塑的，易变的
+622,conceivable,plausible,可想象的
+623,gratify,please,使满足，使高兴
+624,futile,pointless,无用的
+625,contemplate,ponder,深入思考
+626,permeable,porous,可渗透的
+627,presage,portend,预示
+628,didactic,preachy,说教的
+629,sanctimonious,preachy; didactic,假装（比别人）圣洁的
+630,impetuous,precipitate,鲁莽的
+631,rule out,preclude,排除
+632,prejudice,preconception,偏见，先入之见
+633,forerunner,precursor,先驱，预兆
+634,precede,predate; antedate,比先发生
+635,portend,predict; presage,预言
+636,proclivity,predilection; affinity,倾向，嗜好
+637,anticipate,prefigure; foresee,预期，先于某人做某事
+638,preconception,prejudice,先入之见
+639,prophetic,prescient,有预见的
+640,exacting,prescriptive; rigorous; demanding,严格的
+641,safeguard,preserve,保卫
+642,exigent,pressing,迫切的
+643,exceptional,preternatural; rare,不同寻常的，杰出的
+644,preclude,prevent; rule out,排除，防止
+645,rudimentary,primitive; sketchy; embryonic; sketchy;elemental,基本的，未完全发布的
+646,unblemished,pristine,暂新的，清白的
+647,profess,proclaim,公开宣称，信奉
+648,predilection,proclivity; preference,偏爱
+649,voracious,prodigious; insatiable,贪吃的，贪得无厌的
+650,proclaim,profess,宣布，表明
+651,trenchant,profound; incisive,有力的，有效的
+652,wealth,profusion,财富，大量
+653,abound,proliferate,充满
+654,verbose,prolix; long-winded,啰嗦的
+655,prescient,prophetic,有预知能力的
+656,commensurate,proportionate,相称的
+657,versatile,protean; fickle; volatile; flighty; erratic;capricious,多才多艺的，多功能的
+658,parochial,provincial,狭隘的
+659,insular,provincial; private,狭隘的
+660,inflammatory,provocative,煽动性的
+661,circumspect,prudent; chary; cautious,谨慎的
+662,belligerent,pugnacious,好战的
+663,truculent,pugnacious; bellicose; combative;aggressive,好斗的
+664,design,purposefulness,故意，设计
+665,elude,puzzle,避开，不能被理解
+666,imbibe,quaff,饮酒，吸收，接受
+667,abeyance,quiescence,中止
+668,idealistic,quixotic,空想的
+669,banter,raillery,打趣
+670,luxuriant,rampant,茂盛的，丰富的
+671,haphazard,random;helter-skelter,随意的
+672,diatribe,rant,抨击
+673,avaricious,rapacious,贪婪的
+674,reconciliation,rapprochement,和解
+675,intelligible,readable,可理解的
+676,verisimilitude,realism,逼真
+677,pragmatic,realistic,务实的
+678,repudiate,recant,拒绝承认，与断绝关系
+679,undogmatic,receptive,能容纳的，不教条的
+680,gauge,reckon,估计，判断，衡量仪器
+681,shrink,recoil,退缩，回避，缩小，减少
+682,rapprochement,reconciliation,和解
+683,esoteric,recondite; arcane; abstruse,深奥难懂的
+684,rehash,recycle,老调重弹，炒冷饭
+685,liberation,rejection,解放，解脱
+686,kinfolk,relative,亲戚
+687,germane,relevant; apposite,密切相关的
+688,vestige,relic,残留部分
+689,delight,relish,高兴，使高兴
+690,loath,reluctant; unwilling; disinclined,不情愿的
+691,panacea,remedy; cure-all,万能药
+692,strip away,remove,除去
+693,anathema,repellent,厌恶
+694,censure,reprehend,谴责
+695,deplorable,reprehensible,可悲的，应受谴责的
+696,recant,repudiate,宣布放弃
+697,homogeneity,resemblance; uniform,同质
+698,tenacity,resolve; endurance,顽强
+699,ring true,resonate,听来真实
+700,hallow,respect,极其崇敬
+701,deferential,respectful,恭敬的
+702,lull,respite,使平静，蒙蔽，间歇
+703,relief,respite,解脱
+704,skittish,restive; fractious,易受惊的
+705,fractious,restive; skittish,易怒的，难对付的
+706,tonic,restorative,恢复健康的
+707,rehabilitate,restore,恢复
+708,recrudescent,resurgent,复发的
+709,manifest,reveal; self-evident; obvious,明显的，清楚显示
+710,emendation,revision,修订
+711,renaissance,revival,复兴
+712,eloquent,rhetoric,雄辩的
+713,conundrum,riddle; puzzle; enigma,复杂难解的问题
+714,pervasive,rife,普遍的，弥漫的
+715,resonate,ring true,对某人有重要性，共振，一致
+716,ludicrous,risible,荒唐可笑的
+717,elemental,rudimentary,基本的
+718,embryonic,rudimentary,萌芽期的
+719,apogee,pinnacle,顶点
+720,deploy,marshal,安排，部署
+721,primitive,rudimentary; ancient,原始的，初级的，简陋的
+722,sketchy,rudimentary; superficial;undeveloped,粗略的，不完全的
+723,visible,salient,看得见的，明显的
+724,preachy,sanctimonious;didactic,爱说教的
+725,endorse,sanction; commend; support;authorize,支持
+726,factious,schism,宗派的，派系的
+727,admonish,scold,反对，批评，告诫
+728,capture,secure,俘获
+729,narcissism,self-flattery,自恋
+730,decrepitude,senescence,衰老，老朽
+731,unrelated,separate,无关的
+732,successive,sequential,连续的
+733,unerring,settled,万无一失的
+734,stifle,shackle,阻止
+735,superficial,shallow,肤浅的，表面的
+736,truncate,shorten; foreshorten,截短
+737,artful,shrewd,巧妙的
+738,canny,shrewd; deft,精明的
+739,acumen,shrewdness,敏锐
+740,caterwaul,shriek,发出让人不爽的噪音
+741,recoil,shrink,畏缩，后退
+742,deflect,shrug off,使转向
+743,betoken,signify,表示
+744,artless,simplistic,纯真的，朴素的
+745,disparage,slight,贬低
+746,snub,slight,冷落
+747,elusive,slippery; evasive; cryptic,难抓住的，难理解的
+748,dilatory,sluggish; remiss; laggard,拖延的
+749,aspersion,slur,诽谤
+750,hitch,snag,故障
+751,staid,sober,古板的，严肃的
+752,gregarious,sociable,爱交际的，群居的
+753,somber,solemn,严肃的，昏暗的
+754,camaraderie,solidarity,情谊，友情
+755,solemn,somber,严肃的
+756,lethargic,somnolent; slumberous,无精打采的
+757,deflate,soothe,使减少
+758,sleazy,sordid,肮脏的，不诚实的，邪恶的
+759,unassailable,sound;;airtight,毋庸置疑的
+760,dramatic,spectacular,剧烈的，引人注目的
+761,conjecture,speculation,推测
+762,vigorous,spirited,精力充沛的
+763,intuitive,spontaneous; instinctive,凭直觉的
+764,diffuse,spread; disperse; wordy,分散的，传播，话多的
+765,foster,spur; adopt,养育，促进
+766,artificial,spurious,虚假的，人造的
+767,counterfeit,spurious,虚假的
+768,flout,spurn; defy; disregard,公然蔑视
+769,conform to,square with,遵从，与一致
+770,sobering,staid,严肃的
+771,banal,stale,陈腐的，平凡的
+772,invariable,static,不变的，静止的
+773,forestall,stave off; avert; prevent,预先阻止，提前行动
+774,check,stem,阻止
+775,shackle,stifle,束缚
+776,parsimonious,stingy; illiberal,吝啬的
+777,hierarchical,stratified,等级制度的
+778,audacious,striking,大胆的
+779,robust,strong; reliable,健壮的，强有力的
+780,neutralize,stymie,阻止
+781,hinder,stymie; inhibit; block,妨碍
+782,obedience,submission,服从
+783,nuance,subtlety,细微差别
+784,undercut,subvert; impair; undermine,削弱
+785,triumph,success,伟大胜利
+786,sequential,successive,连续的，顺序的
+787,yield,succumb; engender; output,产生，屈服
+788,surly,sullen,阴郁的
+789,supplant,supersede,取代
+790,ancillary,supplementary,补充的
+791,plethora,surfeit; glut,过量
+792,glut,surfeit;plethora,过量
+793,sullen,surly; grumpy,郁郁寡欢的
+794,dubious,suspect; questionable,不确定的，可疑的
+795,defraud,swindle,欺骗
+796,obsequious,sycophantic,谄媚的
+797,figurative,symbolic,比喻的，象征的
+798,tantamount,synonymous,等同于
+799,fusion,synthesis,融合
+800,laconic,taciturn; terse; curt,简洁的
+801,impolitic,tactless,不明智的
+802,synonymous,tantamount,同义的
+803,dreary,tedious,枯燥乏味的
+804,modulate,temper,调节
+805,dispassionate,temperate; analytical,公正客观的，冷静客观的
+806,resolve,tenacity; determination,解决，决定，决心
+807,slanted,tendentious,有倾向的
+808,exiguous,tenuous,稀少的
+809,halfhearted,tepid; lukewarm,不热情的
+810,meticulous,thorough; exact; painstaking,周密的，一丝不苟的
+811,frugal,thrifty,简朴的
+812,list,tilt,倾斜
+813,opportune,timely,适时的
+814,brook,tolerate,容忍
+815,restorative,tonic,恢复健康的
+816,emblematic,totemic,象征的
+817,ephemeral,transitory; short-lived,短暂的
+818,understandable,transparent,容易理解的
+819,profound,trenchant,渊博的，深奥的，深刻的
+820,misgiving,trepidation; qualm,疑虑，担忧
+821,encomium,tribute,赞美
+822,inconsequential,trivial; immaterial; pointless,不重要的
+823,pugnacious,truculent; belligerent,好斗的
+824,credulous,trusting,轻信的
+825,novice,tyro,新手
+826,omnipresent,ubiquitous; universal,无处不在的
+827,unqualified,unalloyed,完全的，不受限制的，无资格的
+828,sound,unassailable; valid,健康的，正确的，可靠的
+829,modest,unassuming; unostentatious,谦虚的，朴实无华的，适度的，有限的
+830,inevitable,unavoidable; preordained;ineluctable,必然的
+831,pristine,unblemished,原始的，暂新的
+832,unremitting,unceasing,不停的
+833,quirky,unconventional,奇怪的
+834,unorthodox,unconventional,非正统的
+835,irrefutable,undeniable,无法反驳的
+836,asymmetrical,uneven,不对称的
+837,nondescript,unexceptional,无个性的
+838,counterintuitive,unexpected,违反直觉的
+839,ignorance,unfamiliarity,无知
+840,outmoded,unfashionable;obsolete;fusty,过时的
+841,unflagging,unfatigued,不知疲倦的
+842,adverse,unfavorable,不利的，逆的
+843,baseless,unfounded; untenable,无根据的
+844,awkward,ungainly,笨拙的，不适合的，尴尬的，棘手的
+845,blameless,unimpeachable,无可指责的
+846,skeptical,unimpressed,怀疑的
+847,inscrutable,uninformative; impenetrable;abstruse,难以理解的
+848,singular,unique,单一的，非凡的，异常的
+849,unfounded,unjustified; baseless; groundless;unwarranted,无根据的
+850,estrange,unlinked; disaffect; alienate,使疏远
+851,decisive,unmistakable,果断的，毋庸置疑的
+852,composed,unperturbed; collected; coolheaded,镇定的
+853,capricious,unpredictable; impulsive; cavalier;versatile; volatile,变化无常的
+854,unremunerative,unprofitable,不挣钱的
+855,unalloyed,unqualified,纯粹的
+856,undeniable,unquestionable;irrefutable,不可否认的
+857,unprepossessing,unremarkable,不吸引人的
+858,unceasing,unremitting,不停的
+859,untrammeled,unrestrained,没有限制的
+860,simpleminded,unsophisticated,心思简单的，淳朴的
+861,fluid,unstable,不稳定的
+862,divorced,untethered; abstracted,分离的
+863,groundless,unwarranted,无根据的
+864,cumbersome,unwieldy,笨重的，复杂难做的
+865,reluctant,unwilling; loath,不情愿的
+866,implacable,unyielding; inexorable,无法安抚的
+867,convulsion,upheaval,动乱
+868,irresolution,vacillation,犹豫不决
+869,nebulous,vague,模糊的
+870,exalt,valorize,赞扬
+871,jejune,vapid,乏味的，幼稚的
+872,fluctuate,vary; vacillate,波动，摇摆不定
+873,honor,venerate,荣誉，尊敬
+874,reverence,veneration,尊敬
+875,prolix,verbose; long-winded,冗长的
+876,long-winded,verbose; prolix,冗长的
+877,protean,versatile,变化多端的，多才多艺的
+878,fickle,versatile; volatile; flighty; erratic;capricious,善变的
+879,relic,vestige,遗迹
+880,chagrin,vexation,失望
+881,exculpate,vindicate,开脱罪行
+882,contravene,violate,触犯
+883,salient,visible; prominent; obtrusive;conspicuous,显著的，重要的
+884,mercurial,volatile; inconstant,变化无常的
+885,prodigious,voracious,巨大的
+886,insatiable,voracious; quenchless,不满足的
+887,decline,wane,衰落，拒绝
+888,ebb,wane; decline,衰退
+889,errant,wayward,不定的，行为错误的
+890,destabilize,weaken,削弱
+891,profusion,wealth,大量
+892,prevalent,widespread; extensive,流行的，普遍的
+893,engaging,winning,迷人的
+894,quotidian,workday,普通的，常见的，日常的
+895,succumb,yield,屈服，死亡
+896,engender,yield; induce,导致
+897,extremist,zealot,极端分子
+898,ideologue,zealot,狂热支持某种理念的人
+899,indolence,sloth,懒惰
+900,refractory,recalcitrant,难以约束的
+901,enthrall,captivate,吸引
+902,supplemental,complementary,补充的
+903,ignoble,reprehensible,可耻的，应收谴责的的
+904,inapposite,misguided,不合适的，误导的
+905,peculiar,idiosyncratic,奇怪的

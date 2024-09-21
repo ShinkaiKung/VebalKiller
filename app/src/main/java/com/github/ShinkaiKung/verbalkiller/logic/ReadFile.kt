@@ -57,7 +57,6 @@ suspend fun loadGroupsToMemory(context: Context): MutableList<Group> {
 suspend fun initDatabase(context: Context): MutableList<Group> {
     val dbName = "group_database"
 
-//    return readCsvFromRes(context)
     if (isDatabaseExists(context, dbName)) {
         println("读取所有 Group 到内存")
         return loadGroupsToMemory(context)
