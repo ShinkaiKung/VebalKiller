@@ -9,21 +9,27 @@ import java.io.File
 
 @Entity(tableName = "group_table")
 data class GroupEntity(
-//    @PrimaryKey(autoGenerate = true) val id: Long = 0,
-    @PrimaryKey val uuid: String,
+    @PrimaryKey val uuid: Int,
     val wordsJson: String,  // JSON 字符串表示 words
-    val memoryHistoryJson: String // JSON 字符串表示 memoryHistory
+    val memoryHistoryJson: String, // JSON 字符串表示 memoryHistory
+    val chineseMeaning: String = "",
+    val errorStatesJson: String
 ) {
     // 辅助函数将 JSON 转换回 Group 对象
     fun toGroup(): Group {
         val gson = Gson()
-        val words: MutableMap<String, MutableList<MemoryRecord>> = gson.fromJson(
-            wordsJson, object : com.google.gson.reflect.TypeToken<Map<String, MutableList<MemoryRecord>>>() {}.type
+        val words: MutableSet<String> = gson.fromJson(
+            wordsJson, object : com.google.gson.reflect.TypeToken<Set<String>>() {}.type
         )
         val memoryHistory: MutableList<MemoryRecord> = gson.fromJson(
-            memoryHistoryJson, object : com.google.gson.reflect.TypeToken<MutableList<MemoryRecord>>() {}.type
+            memoryHistoryJson,
+            object : com.google.gson.reflect.TypeToken<MutableList<MemoryRecord>>() {}.type
         )
-        return Group(uuid, words, memoryHistory)
+        val errorStates: MutableMap<String, Int> = gson.fromJson(
+            errorStatesJson,
+            object : com.google.gson.reflect.TypeToken<MutableMap<String, Int>>() {}.type
+        )
+        return Group(uuid, words, memoryHistory, chineseMeaning, errorStates)
     }
 
     companion object {
@@ -32,7 +38,14 @@ data class GroupEntity(
             val gson = Gson()
             val wordsJson = gson.toJson(group.words)
             val memoryHistoryJson = gson.toJson(group.memoryHistory)
-            return GroupEntity(uuid = group.uuid, wordsJson = wordsJson, memoryHistoryJson = memoryHistoryJson)
+            val errorStatesJson = gson.toJson(group.errorStates)
+            return GroupEntity(
+                uuid = group.uuid,
+                wordsJson = wordsJson,
+                memoryHistoryJson = memoryHistoryJson,
+                chineseMeaning = group.chineseMeaning,
+                errorStatesJson = errorStatesJson
+            )
         }
     }
 }
@@ -89,6 +102,7 @@ suspend fun saveGroupToDatabase(context: Context, group: Group) {
         groupDao.insertGroup(groupEntity)
     }
 }
+
 suspend fun getGroupFromDatabase(context: Context, groupUuid: Long): Group? {
     val db = GroupDatabase.getDatabase(context)
     val groupDao = db.groupDao()

@@ -43,12 +43,13 @@ fun PracticeLayout() {
     // 用于存储每个按钮的状态（是否使用选择的颜色），初始状态都为 false
     val buttonStates = remember { mutableStateListOf(false, false, false, false, false, false) }
     val buttonColors = remember { mutableStateListOf(0, 0, 0, 0, 0, 0) }
-    val words = remember { mutableStateMapOf<String, Group>() }
+    val words = remember { mutableStateListOf<Pair<String, Group>>() }
     val hasConfirmed = remember { mutableStateOf(false) }
     LaunchedEffect(Unit) {
         if (words.size == 0) {
-            val newWords = get6Words(get4Groups())
-            words.putAll(newWords)
+            val newWords = get6Words(getGroupsToPractice(4))
+            words.clear()
+            words.addAll(newWords)
         }
     }
 
@@ -115,16 +116,19 @@ fun PracticeLayout() {
                     colors = ButtonDefaults.buttonColors(
                         // 根据按钮状态选择颜色
                         containerColor = if (buttonColors[index] == 1) md_theme_group_one
-                            else if (buttonColors[index] == 2) md_theme_group_two
-                            else if (buttonColors[index] == 3) md_theme_error_one
-                            else if (buttonColors[index] == 4) md_theme_error_two
-                            else MaterialTheme.colorScheme.primaryContainer
+                        else if (buttonColors[index] == 2) md_theme_group_two
+                        else if (buttonColors[index] == 3) md_theme_error_one
+                        else if (buttonColors[index] == 4) md_theme_error_two
+                        else MaterialTheme.colorScheme.primaryContainer
                     ),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(vertical = 8.dp, horizontal = 16.dp)
                 ) {
-                    Text(words.keys.toList().getOrNull(index)?:"", color = MaterialTheme.colorScheme.onPrimaryContainer)
+                    Text(
+                        text = words.getOrNull(index)?.first ?: "",
+                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                    )
                 }
             }
         }
@@ -146,7 +150,7 @@ fun PracticeLayout() {
                     }
                 },
                 colors = if (!hasConfirmed.value) ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
-                    else ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)
+                else ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)
             ) {
                 Text("Confirm", color = MaterialTheme.colorScheme.onPrimaryContainer)
             }
@@ -159,9 +163,9 @@ fun PracticeLayout() {
                         selectedColor = null
                     }
                     hasConfirmed.value = false
-                    val newWords = get6Words(get4Groups())
+                    val newWords = get6Words(getGroupsToPractice(4))
                     words.clear()
-                    words.putAll(newWords)
+                    words.addAll(newWords)
                     println("selected words: $words")
                 },
                 colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primaryContainer)

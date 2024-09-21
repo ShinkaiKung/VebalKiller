@@ -9,24 +9,27 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.io.InputStream
-import java.util.UUID
 
-suspend fun readCsvFromRes(context: Context) : MutableList<Group> {
+suspend fun readCsvFromRes(context: Context): MutableList<Group> {
     val inputStream: InputStream = context.resources.openRawResource(R.raw.words)
 
     val groupList = mutableListOf<Group>()
 
     inputStream.bufferedReader().useLines { lines ->
         lines.forEach { line ->
-            val group = Group(UUID.randomUUID().toString())
-
-            val tokens = line.split(",")
-
-            tokens.forEach {
-                val word = it.trim().replace("\"", "")
-                group.words[word] = mutableListOf()
-            }
-
+            val cleanedLine = line.replace("\uFEFF", "")  // Remove BOM if present
+            println(cleanedLine)
+            val tokens = cleanedLine.split(",")  // Assuming CSV is comma-separated
+            val uuid = tokens[0].toIntOrNull() ?: return@forEach
+            val word = tokens[1].trim()
+            val synonyms = tokens[2].split(";").map { it.trim() }  // 移除引号并拆分同义词
+            val chineseMeaning = if (tokens.size >= 4) tokens[3].trim() else ""
+            val group = Group(
+                uuid = uuid,
+                words = mutableSetOf(word).apply { addAll(synonyms) },
+                chineseMeaning = chineseMeaning
+            )
+            println(group)
             groupList.add(group)
 
             saveGroupToDatabase(context, group)
@@ -54,6 +57,7 @@ suspend fun loadGroupsToMemory(context: Context): MutableList<Group> {
 suspend fun initDatabase(context: Context): MutableList<Group> {
     val dbName = "group_database"
 
+//    return readCsvFromRes(context)
     if (isDatabaseExists(context, dbName)) {
         println("读取所有 Group 到内存")
         return loadGroupsToMemory(context)

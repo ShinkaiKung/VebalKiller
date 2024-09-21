@@ -1,6 +1,7 @@
 package com.github.ShinkaiKung.verbalkiller.practice
 
 import android.content.Context
+import androidx.compose.runtime.mutableStateOf
 import com.github.ShinkaiKung.verbalkiller.logic.Group
 import com.github.ShinkaiKung.verbalkiller.logic.MemoryRecord
 import com.github.ShinkaiKung.verbalkiller.logic.updateGroupInDatabase
@@ -8,190 +9,204 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-var globalAllGroups: MutableMap<String, Group> = mutableMapOf() // uuid: group
+var globalAllGroups: MutableMap<Int, Group> = mutableMapOf() // uuid: group
 
-// 记忆记录类，存储每次练习的时间和正确性
-data class MemoryRecord(
-    val timestamp: Long,             // 练习时间（以分钟为单位的时间戳）
-    val isCorrect: Boolean           // 是否回答正确
-)
-
-// Group 类，包含多个 Word 对象
-data class Group(
-    val uuid: String,
-    val words: MutableMap<String, MutableList<MemoryRecord>> = mutableMapOf(), // Word 集合
-    val memoryHistory: MutableList<MemoryRecord> = mutableListOf() // 组的记忆历史
-)
-
-
-val groups: List<Group>
+val globalGroups: List<Group>
     get() {
         return globalAllGroups.values.toList()
     }
 
-fun get4Groups(): List<Group> {
-    return groups.shuffled().take(8).sortedBy { it.memoryHistory.size }.take(4)
+var globalSubGroups = globalGroups.take(100)
+
+var globalSubGroupsDesc = mutableStateOf("")
+
+fun getSubGroupsWithIndex(start: Int, end: Int) {
+    val localSubGroups = mutableListOf<Group>()
+    for (i in start until end) {
+        localSubGroups.add(globalGroups.getOrNull(i) ?: break)
+    }
+    globalSubGroups = localSubGroups
+    globalSubGroupsDesc.value = "${start + 1}-${end}"
 }
 
-fun get6Words(selectedGroups: List<Group>): Map<String, Group> {
-    if (selectedGroups.size != 4) {
-        return emptyMap()
+fun getSubGroupsWithErrorState() {
+    val localSubGroups = mutableListOf<Group>()
+    globalGroups.forEach {
+        if (it.errorStates.filter { it.value != 0 }.isNotEmpty()) {
+            localSubGroups.add(it)
+        }
     }
-    val result = mutableMapOf<String, Group>()
+    globalSubGroups = localSubGroups
+    globalSubGroupsDesc.value = "errors"
+}
+
+fun getUnpracticedGroups() {
+    val localSubGroups = mutableListOf<Group>()
+    globalGroups.forEach {
+        if (it.errorStates.size != it.words.size) {
+            localSubGroups.add(it)
+        }
+    }
+    globalSubGroups = localSubGroups
+    globalSubGroupsDesc.value = "unpracticed"
+}
+
+fun getAllGroups() {
+    globalSubGroups = globalGroups
+    globalSubGroupsDesc.value = "all"
+}
+
+fun getGroupsToPractice(size: Int): List<Group> {
+    return globalSubGroups.shuffled().take(2 * size).sortedBy { it.memoryHistory.size }.take(size)
+}
+
+fun get6Words(selectedGroups: List<Group>): List<Pair<String, Group>> {
+    if (selectedGroups.size != 4) {
+        return emptyList()
+    }
+    val result = mutableListOf<Pair<String, Group>>()
 
     // Step 1: 从前两个组中各选择 2 个单词
     repeat(2) { i ->
         val groupIndex = i // 使用第一个和第二个组
-        val groupWords = selectedGroups[groupIndex].words.keys.shuffled().take(4)
-            .sortedBy { word ->
-                selectedGroups[groupIndex].words[word]?.size ?: 0
-            }.take(2)
+        val groupWords = selectedGroups[groupIndex].words.shuffled().take(2)
         for (w in groupWords) {
-            result[w] = selectedGroups[groupIndex]
+            result.add(Pair(w, selectedGroups[groupIndex]))
         }
     }
 
     repeat(2) { i ->
         val groupIndex = 2 + i
-        val groupWords = selectedGroups[groupIndex].words.keys.shuffled().first()
-
-        result[groupWords] = selectedGroups[groupIndex]
-
+        val groupWords = selectedGroups[groupIndex].words.shuffled().first()
+        result.add(Pair(groupWords, selectedGroups[groupIndex]))
     }
 
-    return result
-
+    return result.shuffled()
 }
 
-fun checkAnswer(buttonColors: List<Int>, wordsGroups: Map<String, Group?>): List<Int> {
+fun checkAnswer(buttonColors: List<Int>, wordsGroups: List<Pair<String, Group>>): List<Int> {
+    var rearrangedButtonColors = buttonColors.toMutableList()
+    var firstColor = rearrangedButtonColors[0]
+    rearrangedButtonColors.forEachIndexed { index, color ->
+        if (firstColor == 0 && color != 0) {
+            firstColor = color
+        }
+        if (firstColor == 2) {
+            if (color == 2) {
+                rearrangedButtonColors[index] = -1
+            } else if (color == 1) {
+                rearrangedButtonColors[index] = 2
+            }
+        }
+    }
+    rearrangedButtonColors = rearrangedButtonColors.map { kotlin.math.abs(it) }.toMutableList()
+
     val res = buttonColors.toMutableList()
-    val correctAnswers = mutableListOf<String>()
-    val groupUuids = mutableSetOf<String>()
-    wordsGroups.forEach {
-        if (it.value != null) {
-            if (it.value!!.uuid in groupUuids) {
-                correctAnswers.add(it.value!!.uuid)
-            }
-            groupUuids.add(it.value!!.uuid)
-
-        }
-    }
-
-    val words = wordsGroups.keys.toList()
-    val selectedGroupA = mutableMapOf<Int, String>() // index: uuid
-    val selectedGroupB = mutableMapOf<Int, String>() // index: uuid
-    val selectedGroupAUuid = mutableSetOf<String>()
-    val selectedGroupBUuid = mutableSetOf<String>()
-    words.forEachIndexed { index, word ->
-        val uuid = wordsGroups[word]?.uuid
-        if (buttonColors[index] == 1) {
-            selectedGroupA[index] = uuid!!
-            selectedGroupAUuid.add(uuid)
-        } else if (buttonColors[index] == 2) {
-            selectedGroupB[index] = uuid!!
-            selectedGroupBUuid.add(uuid)
-        }
-    }
-
-    val occurredCorrect = mutableMapOf<String, Int>() // uuid: color
-    if (selectedGroupAUuid.size != 1) {
-        selectedGroupA.forEach {
-            val currentUuid = it.value
-            // 选择了错误答案，消除这个的颜色
-            if (!correctAnswers.contains(currentUuid)) {
-                res[it.key] = 0
-            }
-            // 选择了部分正确答案，将这个答案和另一个答案标为颜色 3
-            else {
-                val color: Int = if (occurredCorrect.contains(currentUuid)) {
-                    occurredCorrect[currentUuid]!!
-                } else {
-                    if (occurredCorrect.values.contains(3)) {
-                        4
-                    } else 3
-                }
-                words.forEachIndexed { index, word ->
-                    if (wordsGroups[word]?.uuid == currentUuid) {
-                        res[index] = color
+    for (i in wordsGroups.indices) {
+        if (rearrangedButtonColors[i] == 1 || rearrangedButtonColors[i] == 2) {
+            for (j in i + 1 until wordsGroups.size) {
+                if (rearrangedButtonColors[i] == rearrangedButtonColors[j]) {
+                    val word_i = wordsGroups[i].first
+                    val word_j = wordsGroups[j].first
+                    if (wordsGroups[i].second.words.contains(word_j) && wordsGroups[j].second.words.contains(
+                            word_i
+                        )
+                    ) {
+                        // do nothing
+                    } else if (wordsGroups[i].second.words.contains(word_j)
+                        || wordsGroups[j].second.words.contains(word_i)
+                    ) {
+                        // do nothing
+                    } else {
+                        res[i] = 0
+                        res[j] = 0
                     }
                 }
-                occurredCorrect[currentUuid] = color
-            }
-        }
-    }
-    if (selectedGroupBUuid.size != 1) {
-        selectedGroupB.forEach {
-            val currentUuid = it.value
-            // 选择了错误答案，消除这个的颜色
-            if (!correctAnswers.contains(currentUuid)) {
-                res[it.key] = 0
-            }
-            // 选择了部分正确答案
-            else {
-                val color: Int = if (occurredCorrect.contains(currentUuid)) {
-                    occurredCorrect[currentUuid]!!
-                } else {
-                    if (occurredCorrect.values.contains(3)) {
-                        4
-                    } else 3
-                }
-                words.forEachIndexed { index, word ->
-                    if (wordsGroups[word]?.uuid == currentUuid) {
-                        res[index] = color
-                    }
-                }
-                occurredCorrect[currentUuid] = color
             }
         }
     }
 
-    println("res: $res")
+    val correctGroupIds = mutableListOf<Int>()
+    val occurredGroupIds = mutableSetOf<Int>()
+    wordsGroups.forEach { pair ->
+        val id = pair.second.uuid
+        if (occurredGroupIds.contains(id)) {
+            correctGroupIds.add(id)
+        }
+        occurredGroupIds.add(id)
+    }
+    if (correctGroupIds.size != 2) {
+        return res
+    }
+
+    var atLeastOneError = false
+    for (i in 0 until res.size) {
+        if (res[i] == 0 && correctGroupIds.contains(wordsGroups[i].second.uuid)) {
+            for (j in i + 1 until res.size) {
+                if (res[j] == 0 && correctGroupIds.contains(wordsGroups[j].second.uuid)) {
+                    if (wordsGroups[i].second.uuid == wordsGroups[j].second.uuid) {
+                        res[i] = if (!atLeastOneError) 3 else 4
+                        res[j] = res[i]
+                        if (!atLeastOneError) {
+                            atLeastOneError = true
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     return res
 }
 
-fun updateGroupState(context: Context, buttonColors: List<Int>, checkedColors: List<Int>, wordsGroups: Map<String, Group?>) {
-    val errorWordSet = mutableSetOf<String>()
-    val wordList = wordsGroups.keys.toList()
-    wordList.forEachIndexed { index, word ->
-        if (buttonColors[index] != checkedColors[index]) {
-            errorWordSet.add(word)
-        }
-    }
-    val now = System.currentTimeMillis()
-    val groupMap = mutableMapOf<String, Group>() // uuid: group
-    wordsGroups.forEach {
-        val group = it.value
-        if (group != null) {
-            groupMap[group.uuid] = group
-        }
-    }
-    groupMap.forEach { uuid, group ->
-        val words = group.words
-        var groupIsCorrect = true
-        words.filterKeys { wordList.contains(it) }.forEach {
-            val word = it.key
-            if(errorWordSet.contains(word)) {
-                group.words[word]?.add(MemoryRecord(now, false))
-                groupIsCorrect = false
+fun updateGroupState(
+    context: Context,
+    buttonColors: List<Int>,
+    checkedColors: List<Int>,
+    wordsGroups: List<Pair<String, Group>>
+) {
+    val updatedGroups = mutableListOf<Group>()
+    val hasOccurredGroupIds = mutableSetOf<Int>()
+    for (i in buttonColors.indices) {
+        // if practice words
+        if (checkedColors[i] != 0) {
+            val group = wordsGroups[i].second
+            val word = wordsGroups[i].first
+
+            // if error
+            var isCorrect: Boolean
+            if (buttonColors[i] != checkedColors[i]) {
+                group.errorStates[word] = 3
+                isCorrect = false
             } else {
-                group.words[word]?.add(MemoryRecord(now, true))
+                if (group.errorStates.contains(word)) {
+                    if (group.errorStates[word] != 0) {
+                        group.errorStates[word] = group.errorStates[word]!! - 1
+                    }
+                } else {
+                    group.errorStates[word] = 0
+                }
+                isCorrect = true
             }
+            if (!hasOccurredGroupIds.contains(group.uuid)) {
+                val now = System.currentTimeMillis()
+                group.memoryHistory.add(MemoryRecord(now, isCorrect))
+                hasOccurredGroupIds.add(group.uuid)
+            }
+            updatedGroups.add(group)
         }
-        group.memoryHistory.add(MemoryRecord(now, groupIsCorrect))
 
     }
-    println("groupMap: $groupMap")
     // write to db
     GlobalScope.launch(Dispatchers.IO) {
-        println("write to db: $groupMap")
-        groupMap.forEach {
-            updateGroupInDatabase(context, it.value)
+        println("write to db: $updatedGroups")
+        updatedGroups.forEach {
+            updateGroupInDatabase(context, it)
         }
     }
     // update cache
-    groupMap.forEach {
-        globalAllGroups[it.key] = it.value
+    updatedGroups.forEach {
+        globalAllGroups[it.uuid] = it
     }
 
 }
