@@ -2,8 +2,18 @@ package com.github.ShinkaiKung.verbalkiller.logic
 
 import android.content.Context
 import androidx.room.*
-import com.google.gson.Gson
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.ConfusionDao
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.ConfusionEntity
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.ContentMetadataDao
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.ContentMetadataEntity
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.MIGRATION_1_2
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.PersistenceCodec
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.PracticeAttemptDao
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.PracticeAttemptEntity
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.ReviewStateDao
+import com.github.ShinkaiKung.verbalkiller.logic.persistence.ReviewStateEntity
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 import java.io.File
 
@@ -15,46 +25,21 @@ data class GroupEntity(
     val chineseMeaning: String = "",
     val errorStatesJson: String
 ) {
-    // 辅助函数将 JSON 转换回 Group 对象
-    fun toGroup(): Group {
-        val gson = Gson()
-        val words: MutableSet<String> = gson.fromJson(
-            wordsJson, object : com.google.gson.reflect.TypeToken<Set<String>>() {}.type
-        )
-        val memoryHistory: MutableList<MemoryRecord> = gson.fromJson(
-            memoryHistoryJson,
-            object : com.google.gson.reflect.TypeToken<MutableList<MemoryRecord>>() {}.type
-        )
-        val errorStates: MutableMap<String, Int> = gson.fromJson(
-            errorStatesJson,
-            object : com.google.gson.reflect.TypeToken<MutableMap<String, Int>>() {}.type
-        )
-        return Group(uuid, words, memoryHistory, chineseMeaning, errorStates)
-    }
+    fun toGroup(): Group = PersistenceCodec.entityToGroup(this)
 
     companion object {
-        // 辅助函数将 Group 对象转换为 GroupEntity
-        fun fromGroup(group: Group): GroupEntity {
-            val gson = Gson()
-            val wordsJson = gson.toJson(group.words)
-            val memoryHistoryJson = gson.toJson(group.memoryHistory)
-            val errorStatesJson = gson.toJson(group.errorStates)
-            return GroupEntity(
-                uuid = group.uuid,
-                wordsJson = wordsJson,
-                memoryHistoryJson = memoryHistoryJson,
-                chineseMeaning = group.chineseMeaning,
-                errorStatesJson = errorStatesJson
-            )
-        }
+        fun fromGroup(group: Group): GroupEntity = PersistenceCodec.groupToEntity(group)
     }
 }
 
 @Dao
 interface GroupDao {
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Upsert
     suspend fun insertGroup(group: GroupEntity)
+
+    @Upsert
+    suspend fun upsertGroups(groups: List<GroupEntity>)
 
     @Update
     suspend fun updateGroup(group: GroupEntity)
@@ -65,16 +50,38 @@ interface GroupDao {
     @Query("SELECT * FROM group_table WHERE uuid = :groupUuId")
     suspend fun getGroupById(groupUuId: Long): GroupEntity?
 
-    @Query("SELECT * FROM group_table")
+    @Query("SELECT * FROM group_table ORDER BY uuid")
     suspend fun getAllGroups(): List<GroupEntity>
+
+    @Query("SELECT * FROM group_table ORDER BY uuid")
+    fun observeAllGroups(): Flow<List<GroupEntity>>
+
+    @Query("SELECT * FROM group_table WHERE uuid = :groupUuId")
+    fun observeGroupById(groupUuId: Int): Flow<GroupEntity?>
 }
 
 
-@Database(entities = [GroupEntity::class], version = 1)
+@Database(
+    entities = [
+        GroupEntity::class,
+        PracticeAttemptEntity::class,
+        ReviewStateEntity::class,
+        ConfusionEntity::class,
+        ContentMetadataEntity::class,
+    ],
+    version = 2,
+    exportSchema = true,
+)
 abstract class GroupDatabase : RoomDatabase() {
     abstract fun groupDao(): GroupDao
+    abstract fun practiceAttemptDao(): PracticeAttemptDao
+    abstract fun reviewStateDao(): ReviewStateDao
+    abstract fun confusionDao(): ConfusionDao
+    abstract fun contentMetadataDao(): ContentMetadataDao
 
     companion object {
+        const val SCHEMA_VERSION = 2
+
         @Volatile
         private var INSTANCE: GroupDatabase? = null
 
@@ -84,7 +91,7 @@ abstract class GroupDatabase : RoomDatabase() {
                     context.applicationContext,
                     GroupDatabase::class.java,
                     "group_database"
-                ).build()
+                ).addMigrations(MIGRATION_1_2).build()
                 INSTANCE = instance
                 instance
             }

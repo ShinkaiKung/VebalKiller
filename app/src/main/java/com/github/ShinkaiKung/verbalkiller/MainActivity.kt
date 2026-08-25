@@ -6,45 +6,36 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.compose.rememberNavController
+import com.github.ShinkaiKung.verbalkiller.info.ProgressViewModel
+import com.github.ShinkaiKung.verbalkiller.practice.PracticeViewModel
 import com.github.ShinkaiKung.verbalkiller.ui.theme.VerbalKillerTheme
-import onAppStart
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        onAppStart(this)
-//        enableEdgeToEdge()
+        val repository = (application as VerbalKillerApplication).repository
+        val practiceViewModel = ViewModelProvider(
+            this,
+            PracticeViewModel.Factory(repository),
+        )[PracticeViewModel::class.java]
+        val progressViewModel = ViewModelProvider(
+            this,
+            ProgressViewModel.Factory(repository),
+        )[ProgressViewModel::class.java]
+
         setContent {
             VerbalKillerTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.surface
                 ) {
-                    val naviController = rememberNavController()
-                    NavLayout(naviController)
+                    val navController = rememberNavController()
+                    NavLayout(navController, practiceViewModel, progressViewModel)
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    VerbalKillerTheme {
-        Greeting("Android")
     }
 }

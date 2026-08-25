@@ -4,32 +4,30 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Pair A: rows 1 and 3, aligned left and joined by a left arc. -->
     <path
         android:fillColor="#00000000"
         android:pathData="M32,36C22,36 22,60 32,60"
-        android:strokeColor="#291800"
+        android:strokeColor="#FF000000"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:strokeWidth="4" />
-    <!-- Pair B: rows 2 and 4, equally indented and joined by a right arc. -->
     <path
         android:fillColor="#00000000"
         android:pathData="M76,48C86,48 86,72 76,72"
-        android:strokeColor="#465A37"
+        android:strokeColor="#FF000000"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:strokeWidth="4" />
     <path
-        android:fillColor="#291800"
+        android:fillColor="#FF000000"
         android:pathData="M32,32h34a4,4 0,0 1,4 4a4,4 0,0 1,-4 4h-34a4,4 0,0 1,-4 -4a4,4 0,0 1,4 -4z" />
     <path
-        android:fillColor="#465A37"
+        android:fillColor="#FF000000"
         android:pathData="M42,44h34a4,4 0,0 1,4 4a4,4 0,0 1,-4 4h-34a4,4 0,0 1,-4 -4a4,4 0,0 1,4 -4z" />
     <path
-        android:fillColor="#291800"
+        android:fillColor="#FF000000"
         android:pathData="M32,56h34a4,4 0,0 1,4 4a4,4 0,0 1,-4 4h-34a4,4 0,0 1,-4 -4a4,4 0,0 1,4 -4z" />
     <path
-        android:fillColor="#465A37"
+        android:fillColor="#FF000000"
         android:pathData="M42,68h34a4,4 0,0 1,4 4a4,4 0,0 1,-4 4h-34a4,4 0,0 1,-4 -4a4,4 0,0 1,4 -4z" />
 </vector>

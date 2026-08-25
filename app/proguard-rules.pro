@@ -12,10 +12,19 @@
 #   public *;
 #}
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Gson's TypeToken relies on generic signatures. Runtime annotations are kept
+# as well so future @SerializedName fields remain safe under R8.
+-keepattributes Signature
+-keepattributes RuntimeVisibleAnnotations,RuntimeInvisibleAnnotations,AnnotationDefault
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# MemoryRecord is persisted as JSON in Room. Preserve its serialized field
+# names so an app update can still read records written by an older version.
+-keep class com.github.ShinkaiKung.verbalkiller.logic.MemoryRecord {
+    <fields>;
+}
+
+# Preserve line numbers for actionable release crash reports.
+-keepattributes SourceFile,LineNumberTable
+
+# Hide original source filenames while retaining the line mapping.
+-renamesourcefileattribute SourceFile
